@@ -510,8 +510,10 @@ $(document).ready(function() {
 });
 
 $(window).on('load resize scroll', function(e) {
-    if ($(window).scrollTop() + $(window).height() * 2 / 3 > $('.about-sale-info-tab.active').offset().top) {
-        $('.about-sale-info-tab.active .about-sale-info-graf-item').addClass('visible');
+    if ($('.about-sale-info-tab.active').length > 0) {
+        if ($(window).scrollTop() + $(window).height() * 2 / 3 > $('.about-sale-info-tab.active').offset().top) {
+            $('.about-sale-info-tab.active .about-sale-info-graf-item').addClass('visible');
+        }
     }
 });
 

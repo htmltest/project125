@@ -183,8 +183,8 @@ form {margin:40px 0; padding:0}
 
 @media screen and (max-width:1119px) {
     .header-menu ul {font-weight:500; line-height:56px}
-    .header-menu ul li {margin:0; float:none; height:57px; border-bottom:1px solid #eef0f2; padding:0 24px}
-    .header-menu ul li a {color:#151515}
+    .header-menu ul li {margin:0; float:none; height:57px; border-bottom:1px solid #eef0f2; padding:0}
+    .header-menu ul li a {color:#151515; display:block; height:56px; line-height:56px; padding:0 24px}
     .header-menu ul li.active a {color:#0353a4}
     .mobile-menu-catalogue-open .header-menu {display:none}
 }
@@ -233,10 +233,10 @@ form {margin:40px 0; padding:0}
     .header-mobile-menu-content > ul > li.with-submenu > a:after {content:""; display:block; width:16px; height:2px; background:#208bd6; position:absolute; right:24px; top:26px}
     .header-mobile-menu-content > ul > li.with-submenu > a:after {transform:rotate(-90deg)}
     .header-mobile-menu-content > ul > li.with-submenu.open > a:after {display:none}
-    .header-mobile-menu-content ul li ul {display:none; padding:8px 24px; border:none; border-top:1px solid #d6dced; background:#fff}
+    .header-mobile-menu-content ul li ul {display:none; padding:16px 24px; border:none; border-top:1px solid #d6dced; background:#fff}
     .header-mobile-menu-content ul li.with-submenu.open ul {display:block}
-    .header-mobile-menu-content ul li ul li {margin:16px 0; padding:0; line-height:22px; border-top:none}
-    .header-mobile-menu-content ul li ul li a {color:#8b8c9e}
+    .header-mobile-menu-content ul li ul li {margin:0; padding:0; line-height:22px; border-top:none}
+    .header-mobile-menu-content ul li ul li a {color:#8b8c9e; display:block; padding:8px 0}
 }
 
 .header-location {float:right; text-align:right; margin:20px 0 0 0}
@@ -263,9 +263,9 @@ form {margin:40px 0; padding:0}
 
 @media screen and (max-width:1119px) {
     .header-city {display:none}
-    .mobile-menu-open .header-city {display:block; position:absolute; left:24px; right:24px; top:198px; line-height:56px; height:57px; border-bottom:1px solid #eef0f2; padding:0 24px; font-weight:500}
+    .mobile-menu-open .header-city {display:block; position:absolute; left:24px; right:24px; top:198px; line-height:56px; height:57px; border-bottom:1px solid #eef0f2; padding:0; font-weight:500}
     .mobile-menu-catalogue-open .header-city {display:none}
-    .header-city-link {display:inline; color:#0353a4; padding:0}
+    .header-city-link {display:block; color:#0353a4; padding:0 24px; height:56px; line-height:56px}
     .header-city-link:before {content:"Регион: "}
     .header-city-link:after {display:none}
     .header-city-window {display:none}
