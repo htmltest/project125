@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>АСТ</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="js/nouislider/nouislider.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.css" />
+        <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- header -->
+            <div class="header">
+                <div class="container">
+                    <div class="header-logo">
+                        <div class="logo"><a href="index.html"></a></div>
+                        <div class="logo-title">АгроСтройТорг</div>
+                    </div>
+
+                    <div class="header-content">
+                        <div class="header-mobile-menu">
+                            <a href="#" class="header-mobile-menu-link">Каталог<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 11.0526H3.4L10.2 18.2105C10.6 18.6316 10.6 19.2632 10.2 19.6842C10 19.8947 9.7 20 9.5 20C9.3 20 9 19.8947 8.8 19.6842L0.299999 10.7368C-0.1 10.3158 -0.1 9.68421 0.299999 9.26316L8.8 0.315789C9.2 -0.105263 9.8 -0.105263 10.2 0.315789C10.6 0.736842 10.6 1.36842 10.2 1.78947L3.4 8.94737H23C23.6 8.94737 24 9.36842 24 10C24 10.6316 23.6 11.0526 23 11.0526Z" /></svg></a>
+                            <a href="#" class="header-mobile-menu-back"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 11.0526H3.4L10.2 18.2105C10.6 18.6316 10.6 19.2632 10.2 19.6842C10 19.8947 9.7 20 9.5 20C9.3 20 9 19.8947 8.8 19.6842L0.299999 10.7368C-0.1 10.3158 -0.1 9.68421 0.299999 9.26316L8.8 0.315789C9.2 -0.105263 9.8 -0.105263 10.2 0.315789C10.6 0.736842 10.6 1.36842 10.2 1.78947L3.4 8.94737H23C23.6 8.94737 24 9.36842 24 10C24 10.6316 23.6 11.0526 23 11.0526Z" /></svg>Назад</a>
+                            <div class="header-mobile-menu-content">
+                                <ul>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-tanks.html">Емкости</a>
+                                        <ul>
+                                            <li><a href="catalogue-tanks.html">Емкости пластиковые</a></li>
+                                            <li><a href="catalogue-tanks.html">Емкости нержавеющие</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-cassettes.html">Кассеты для перевозки жидкостей</a>
+                                        <ul>
+                                            <li><a href="catalogue-cassettes.html#descr">Описание</a></li>
+                                            <li><a href="catalogue-cassettes.html#popular">Популярные конфигурации</a></li>
+                                            <li><a href="catalogue-cassettes.html#video">Видеообзор</a></li>
+                                            <li><a href="catalogue-cassettes.html#make">Создать свою конфигурацию</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-parts.html">Комплектующие к&nbsp;емкостям</a>
+                                        <ul>
+                                            <li><a href="catalogue-parts.html">Фильтры</a></li>
+                                            <li><a href="catalogue-parts.html">Крышки</a></li>
+                                            <li><a href="catalogue-parts.html">Фиттинги</a></li>
+                                            <li><a href="catalogue-parts.html">Шланги и рукава</a></li>
+                                            <li><a href="catalogue-parts.html">Хомуты</a></li>
+                                            <li><a href="catalogue-parts.html">Прочее</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Мотопомпы и насосы</a></li>
+                                    <li class="with-submenu">
+                                        <a href="#">Растворные узлы</a>
+                                        <ul>
+                                            <li><a href="#">Стационарные растворные узлы</a></li>
+                                            <li><a href="#">Мобильные растворные узлы</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Изделия из полимеров на&nbsp;заказ</a></li>
+                                    <li><a href="#">Прочая продукция</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header-menu">
+                            <ul>
+                                <li><a href="services.html">Услуги</a></li>
+                                <li><a href="delivery.html">Доставка</a></li>
+                                <li class="active"><a href="about.html">О компании</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-search">
+                            <form action="search.html" method="post">
+                                <div class="header-search-input"><input type="text" name="search" value="" class="required" placeholder="Поиск по товарам, категориям, артикулу" /></div>
+                                <div class="header-search-submit"><button type="submit"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 8.8H9.36L9.12 8.56C9.92 7.68 10.4 6.48 10.4 5.2C10.4 2.32 8.08 0 5.2 0C2.32 0 0 2.32 0 5.2C0 8.08 2.32 10.4 5.2 10.4C6.48 10.4 7.68 9.92 8.56 9.12L8.8 9.36V10L12.8 14L14 12.8L10 8.8V8.8ZM5.2 8.8C3.2 8.8 1.6 7.2 1.6 5.2C1.6 3.2 3.2 1.6 5.2 1.6C7.2 1.6 8.8 3.2 8.8 5.2C8.8 7.2 7.2 8.8 5.2 8.8V8.8Z" /></svg></button></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="header-location">
+                        <div class="header-city">
+                            <a href="windows/city.html" class="header-city-link window-link">Пенза</a>
+                            <div class="header-city-window">
+                                <div class="header-city-window-text">Ваш город — Пенза?</div>
+                                <div class="header-city-window-ctrl">
+                                    <div class="header-city-window-btn"><a href="#">Да</a></div>
+                                    <div class="header-city-window-link"><a href="windows/city.html" class="window-link">Выбрать другой</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-phone"><a href="tel:+78412980900">+7 (8412) 98-09-00</a></div>
+                        <div class="header-callback"><a href="windows/callback.html" class="window-link">Заказать звонок</a></div>
+                        <div class="header-contacts-mobile">
+                            <div class="header-contacts-mobile-phone"><a href="tel:+78412980900" class="btn-red">+7 (8412) 98-09-00</a></div>
+                            <div class="header-contacts-mobile-callback"><a href="windows/callback.html" class="window-link">Заказать звонок</a></div>
+                            <div class="header-contacts-mobile-email"><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="mobile-menu-link"></a>
+                </div>
+            </div>
+            <!-- header END -->
+
+            <!-- nav -->
+            <div class="nav">
+                <div class="container">
+                    <ul>
+                        <li class="with-submenu">
+                            <a href="#">Весь каталог</a>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-tanks.html">Емкости пластиковые</a></li>
+                                        <li><a href="catalogue-tanks.html">Емкости нержавеющие</a></li>
+                                    </ul>
+                                    <a href="catalogue-tanks.html">Емкости</a>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-cassettes.html#descr">Описание</a></li>
+                                        <li><a href="catalogue-cassettes.html#popular">Популярные конфигурации</a></li>
+                                        <li><a href="catalogue-cassettes.html#video">Видеообзор</a></li>
+                                        <li><a href="catalogue-cassettes.html#make">Создать свою конфигурацию</a></li>
+                                    </ul>
+                                    <a href="catalogue-cassettes.html">Кассеты для перевозки жидкостей</a>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-parts.html">Фильтры</a></li>
+                                        <li><a href="catalogue-parts.html">Крышки</a></li>
+                                        <li><a href="catalogue-parts.html">Фиттинги</a></li>
+                                        <li><a href="catalogue-parts.html">Шланги и рукава</a></li>
+                                        <li><a href="catalogue-parts.html">Хомуты</a></li>
+                                        <li><a href="catalogue-parts.html">Прочее</a></li>
+                                    </ul>
+                                    <a href="catalogue-parts.html">Комплектующие к&nbsp;емкостям</a>
+                                </li>
+                                <li><a href="#">Мотопомпы и насосы</a></li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Стационарные растворные узлы</a></li>
+                                        <li><a href="#">Мобильные растворные узлы</a></li>
+                                    </ul>
+                                    <a href="#">Растворные узлы</a>
+                                </li>
+                                <li><a href="#">Изделия из полимеров на&nbsp;заказ</a></li>
+                                <li><a href="#">Прочая продукция</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="catalogue-tanks.html">Емкости</a></li>
+                        <li><a href="catalogue-cassettes.html">Кассеты для перевозки</a></li>
+                        <li><a href="catalogue-parts.html">Комплектующие</a></li>
+                        <li><a href="#">Мотопомпы</a></li>
+                        <li><a href="#">Растворные узлы</a></li>
+                        <li><a href="#">Изделия из полимеров на заказ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- nav END -->
+
+            <div class="content-header">
+                <div class="container">
+                    <h1>О компании</h1>
+                </div>
+            </div>
+
+            <!-- content menu -->
+            <div class="content-menu">
+                <div class="container">
+                    <div class="content-menu-inner">
+                        <div class="content-menu-list">
+                            <div class="content-menu-list-inner">
+                                <div class="content-menu-list-ul">
+                                    <div class="content-menu-list-li active"><a href="about.html">Основные сведения</a></div>
+                                    <div class="content-menu-list-li"><a href="about-produce.html">Наше производство</a></div>
+                                    <div class="content-menu-list-li"><a href="about-news.html">Новости</a></div>
+                                    <div class="content-menu-list-li"><a href="#">Статьи</a></div>
+                                </div>
+                            </div>
+                            <div class="content-menu-list-active"></div>
+                            <div class="content-menu-list-next"><svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.703068" d="M1 6.02632H10.8L7.4 9.60526C7.2 9.81579 7.2 10.1316 7.4 10.3421C7.5 10.4474 7.65 10.5 7.75 10.5C7.85 10.5 8 10.4474 8.1 10.3421L12.35 5.86842C12.55 5.65789 12.55 5.34211 12.35 5.13158L8.1 0.657895C7.9 0.447368 7.6 0.447368 7.4 0.657895C7.2 0.868421 7.2 1.18421 7.4 1.39474L10.8 4.97368H1C0.7 4.97368 0.5 5.18421 0.5 5.5C0.5 5.81579 0.7 6.02632 1 6.02632Z" /></svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content menu END -->
+
+            <div class="about-digits">
+                <div class="container">
+                    <div class="about-digits-item">
+                        <div class="about-digits-item-value">9</div>
+                        <div class="about-digits-item-text">лет на рынке</div>
+                    </div>
+                    <div class="about-digits-item">
+                        <div class="about-digits-item-value">2812</div>
+                        <div class="about-digits-item-text">изделий марки «АСТ»<br /> произведено в 2010-2018 гг</div>
+                    </div>
+                    <div class="about-digits-item">
+                        <div class="about-digits-item-value">224</div>
+                        <div class="about-digits-item-text">клиента (из 346) обратились к нам<br /> повторно за новыми заказами</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-history">
+                <div class="container">
+                    <h2>История компании</h2>
+                    <div class="about-history-list">
+                        <div class="about-history-item">
+                            <div class="about-history-item-year">2010</div>
+                            <div class="about-history-item-text">Основана компания «АгроСтройТорг», занимающаяся комплексным снабжением предприятий</div>
+                        </div>
+                        <div class="about-history-item">
+                            <div class="about-history-item-year">2012</div>
+                            <div class="about-history-item-text">Запустили собственное производство емкостного оборудования.<br /> Создали собственный бренд «АСТ».</div>
+                        </div>
+                        <div class="about-history-item">
+                            <div class="about-history-item-year">2014</div>
+                            <div class="about-history-item-text">Запустили ротоформовочное производство емкостей под брендом «АСТ»</div>
+                        </div>
+                        <div class="about-history-item">
+                            <div class="about-history-item-year">2016</div>
+                            <div class="about-history-item-text">Запустили производство емкостей бренда «АСТ» из полипропилена</div>
+                        </div>
+                        <div class="about-history-item">
+                            <div class="about-history-item-year">2017</div>
+                            <div class="about-history-item-text">Запустили производство емкостей бренда «АСТ» из нержавеющей стали</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- about sale -->
+            <div class="about-sale">
+                <div class="container">
+                    <h2>Динамика продаж изделий марки «АСТ»</h2>
+                    <div class="about-sale-content">
+                        <div class="about-sale-menu">
+                            <div class="about-sale-menu-ul">
+                                <div class="about-sale-menu-li active"><a href="#">Общие показатели</a></div>
+                                <div class="about-sale-menu-li"><a href="#">Емкости</a></div>
+                                <div class="about-sale-menu-li"><a href="#">Кассеты</a></div>
+                                <div class="about-sale-menu-li"><a href="#">Растворные узлы</a></div>
+                            </div>
+                            <div class="about-sale-menu-active"></div>
+                        </div>
+                        <div class="about-sale-info">
+                            <div class="about-sale-info-tab active">
+                                <div class="about-sale-info-graf">
+                                    <div class="about-sale-info-graf-item" style="width:100%">
+                                        <div class="about-sale-info-graf-item-year">2018</div>
+                                        <div class="about-sale-info-graf-item-value">708 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:90%">
+                                        <div class="about-sale-info-graf-item-year">2017</div>
+                                        <div class="about-sale-info-graf-item-value">640 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:84.5%">
+                                        <div class="about-sale-info-graf-item-year">2016</div>
+                                        <div class="about-sale-info-graf-item-value">497 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:71.8%">
+                                        <div class="about-sale-info-graf-item-year">2015</div>
+                                        <div class="about-sale-info-graf-item-value">410 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:52.1%">
+                                        <div class="about-sale-info-graf-item-year">2014</div>
+                                        <div class="about-sale-info-graf-item-value">374 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item about-sale-info-graf-item-valueout" style="width:18.3%">
+                                        <div class="about-sale-info-graf-item-year">2013</div>
+                                        <div class="about-sale-info-graf-item-value">129 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item about-sale-info-graf-item-noyear about-sale-info-graf-item-valueout" style="width:7.2%">
+                                        <div class="about-sale-info-graf-item-year">2012</div>
+                                        <div class="about-sale-info-graf-item-value">48 шт</div>
+                                    </div>
+                                </div>
+                                <div class="about-sale-info-content">
+                                    <div class="about-sale-info-content-photo"><img src="files/about-sale.jpg" alt="" /></div>
+                                    <div class="about-sale-info-content-text">Продажи емкостей, кассет для перевозки жидкостей и растворных узлов марки «АСТ» демонстрируют устойчивый рост каждый год.<br /> Растет доверие к качеству наших изделий — растет наше производство.</div>
+                                    <div class="about-sale-info-content-link"><a href="catalogue-parts.html">Перейти к растворным узлам</a></div>
+                                </div>
+                            </div>
+
+                            <div class="about-sale-info-tab">
+                                <div class="about-sale-info-graf">
+                                    <div class="about-sale-info-graf-item" style="width:100%">
+                                        <div class="about-sale-info-graf-item-year">2018</div>
+                                        <div class="about-sale-info-graf-item-value">78 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:90%">
+                                        <div class="about-sale-info-graf-item-year">2017</div>
+                                        <div class="about-sale-info-graf-item-value">64 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:84.5%">
+                                        <div class="about-sale-info-graf-item-year">2016</div>
+                                        <div class="about-sale-info-graf-item-value">49 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:71.8%">
+                                        <div class="about-sale-info-graf-item-year">2015</div>
+                                        <div class="about-sale-info-graf-item-value">41 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:52.1%">
+                                        <div class="about-sale-info-graf-item-year">2014</div>
+                                        <div class="about-sale-info-graf-item-value">37 шт</div>
+                                    </div>
+                                </div>
+                                <div class="about-sale-info-content">
+                                    <div class="about-sale-info-content-photo"><img src="files/about-sale.jpg" alt="" /></div>
+                                    <div class="about-sale-info-content-text">Продажи емкостей, кассет для перевозки жидкостей и растворных узлов марки «АСТ» демонстрируют устойчивый рост каждый год.<br /> Растет доверие к качеству наших изделий — растет наше производство.</div>
+                                    <div class="about-sale-info-content-link"><a href="catalogue-tanks.html">Перейти к емкостям</a></div>
+                                </div>
+                            </div>
+
+                            <div class="about-sale-info-tab">
+                                <div class="about-sale-info-graf">
+                                    <div class="about-sale-info-graf-item" style="width:100%">
+                                        <div class="about-sale-info-graf-item-year">2018</div>
+                                        <div class="about-sale-info-graf-item-value">78 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:90%">
+                                        <div class="about-sale-info-graf-item-year">2017</div>
+                                        <div class="about-sale-info-graf-item-value">64 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:84.5%">
+                                        <div class="about-sale-info-graf-item-year">2016</div>
+                                        <div class="about-sale-info-graf-item-value">49 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:71.8%">
+                                        <div class="about-sale-info-graf-item-year">2015</div>
+                                        <div class="about-sale-info-graf-item-value">41 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:52.1%">
+                                        <div class="about-sale-info-graf-item-year">2014</div>
+                                        <div class="about-sale-info-graf-item-value">37 шт</div>
+                                    </div>
+                                </div>
+                                <div class="about-sale-info-content">
+                                    <div class="about-sale-info-content-photo"><img src="files/about-sale.jpg" alt="" /></div>
+                                    <div class="about-sale-info-content-text">Продажи емкостей, кассет для перевозки жидкостей и растворных узлов марки «АСТ» демонстрируют устойчивый рост каждый год.<br /> Растет доверие к качеству наших изделий — растет наше производство.</div>
+                                    <div class="about-sale-info-content-link"><a href="catalogue-cassettes.html">Перейти к кассетам</a></div>
+                                </div>
+                            </div>
+
+                            <div class="about-sale-info-tab">
+                                <div class="about-sale-info-graf">
+                                    <div class="about-sale-info-graf-item" style="width:100%">
+                                        <div class="about-sale-info-graf-item-year">2018</div>
+                                        <div class="about-sale-info-graf-item-value">78 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:90%">
+                                        <div class="about-sale-info-graf-item-year">2017</div>
+                                        <div class="about-sale-info-graf-item-value">64 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:84.5%">
+                                        <div class="about-sale-info-graf-item-year">2016</div>
+                                        <div class="about-sale-info-graf-item-value">49 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:71.8%">
+                                        <div class="about-sale-info-graf-item-year">2015</div>
+                                        <div class="about-sale-info-graf-item-value">41 шт</div>
+                                    </div>
+                                    <div class="about-sale-info-graf-item" style="width:52.1%">
+                                        <div class="about-sale-info-graf-item-year">2014</div>
+                                        <div class="about-sale-info-graf-item-value">37 шт</div>
+                                    </div>
+                                </div>
+                                <div class="about-sale-info-content">
+                                    <div class="about-sale-info-content-photo"><img src="files/about-sale.jpg" alt="" /></div>
+                                    <div class="about-sale-info-content-text">Продажи емкостей, кассет для перевозки жидкостей и растворных узлов марки «АСТ» демонстрируют устойчивый рост каждый год.<br /> Растет доверие к качеству наших изделий — растет наше производство.</div>
+                                    <div class="about-sale-info-content-link"><a href="catalogue-parts.html">Перейти к растворным узлам</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- about sale END -->
+
+            <div class="about-map">
+                <div class="container">
+                    <h2>Мы работаем для всех регионов РФ и ближнего зарубежья</h2>
+                    <p class="about-map-text">В 2018 году мы охватили 25 регионов поставки и продолжаем расширение</p>
+                    <div class="about-map-inner"><img src="images/about-map.png" alt="" /></div>
+                </div>
+            </div>
+
+            <div class="footer-callback">
+                <div class="footer-callback-title">Узнайте больше по&nbsp;телефону</div>
+                <a href="tel:+78412980900" class="footer-callback-phone">+7 (8412) 98-09-00</a>
+                <div class="footer-callback-link"><a href="windows/callback.html" class="window-link"><span>Заказать обратный звонок</span></a></div>
+                <div class="footer-contacts-link"><a href="contacts.html#feedback-form">Форма обратной связи</a></div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon"></div>
+                        <div class="footer-logo-title">АгроСтройТорг</div>
+                    </div>
+
+                    <div class="footer-contacts footer-contacts-mobile">
+                        <div class="footer-contacts-address">440061, г. Пенза, ул. Насосная 3к2, оф.21</div>
+                        <div class="footer-contacts-links">
+                            <p><a href="tel:+78412980900">+7 (8412) 98-09-00</a></p>
+                            <p><a href="tel:+78412980500">+7 (8412) 98-05-00</a></p>
+                            <p><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></p>
+                        </div>
+                        <div class="footer-contacts-schedule">Режим работы: пн-пт 9:00-18:00</div>
+                        <div class="footer-contacts-delivery">Доставка из г. Пензы: от 1 дня</div>
+                    </div>
+
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="services.html">Услуги</a></li>
+                            <li><a href="delivery.html">Доставка</a></li>
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-address">440061, г. Пенза, ул. Насосная 3к2, оф.21</div>
+                        <div class="footer-contacts-links">
+                            <p><a href="tel:+78412980900">+7 (8412) 98-09-00</a></p>
+                            <p><a href="tel:+78412980500">+7 (8412) 98-05-00</a></p>
+                            <p><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></p>
+                        </div>
+                        <div class="footer-contacts-schedule">Режим работы: пн-пт 9:00-18:00</div>
+                        <div class="footer-contacts-delivery">Доставка из г. Пензы: от 1 дня</div>
+                    </div>
+
+                    <div class="footer-copyrights">© ООО «АСТ», 2018</div>
+                    <div class="footer-policy"><a href="policy.html">Пользовательское соглашение</a></div>
+                    <div class="footer-developer"><a href="http://7pap.ru" target="_blank">Дизайн и разработка: <img src="images/7pap.svg" alt="" /></a></div>
+                </div>
+            </div>
+            <!-- footer END -->
+
+            <div class="cookie-window">
+                <div class="cookie-window-text">Чтобы вам было удобнее пользоваться сайтом, мы используем cookies для сбора технической информации, такой как IP-адрес вашего местоположения.<br /> Продолжая использовать наш сайт, вы соглашаетесь с использованием файлов cookies.</div>
+                <div class="cookie-window-btn"><a href="#">Согласен</a></div>
+                <div class="cookie-window-link"><a href="policy.html">Подробнее</a></div>
+            </div>
+
+        </div>
+        <!-- wrapper END -->
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/nouislider/nouislider.min.js"></script>
+        <script src="js/nouislider/wNumb.js"></script>
+        <script src="js/cookie/jquery.cookie.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>

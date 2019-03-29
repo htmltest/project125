@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>АСТ</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="js/nouislider/nouislider.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.css" />
+        <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- header -->
+            <div class="header">
+                <div class="container">
+                    <div class="header-logo">
+                        <div class="logo"><a href="index.html"></a></div>
+                        <div class="logo-title">АгроСтройТорг</div>
+                    </div>
+
+                    <div class="header-content">
+                        <div class="header-mobile-menu">
+                            <a href="#" class="header-mobile-menu-link">Каталог<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 11.0526H3.4L10.2 18.2105C10.6 18.6316 10.6 19.2632 10.2 19.6842C10 19.8947 9.7 20 9.5 20C9.3 20 9 19.8947 8.8 19.6842L0.299999 10.7368C-0.1 10.3158 -0.1 9.68421 0.299999 9.26316L8.8 0.315789C9.2 -0.105263 9.8 -0.105263 10.2 0.315789C10.6 0.736842 10.6 1.36842 10.2 1.78947L3.4 8.94737H23C23.6 8.94737 24 9.36842 24 10C24 10.6316 23.6 11.0526 23 11.0526Z" /></svg></a>
+                            <a href="#" class="header-mobile-menu-back"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 11.0526H3.4L10.2 18.2105C10.6 18.6316 10.6 19.2632 10.2 19.6842C10 19.8947 9.7 20 9.5 20C9.3 20 9 19.8947 8.8 19.6842L0.299999 10.7368C-0.1 10.3158 -0.1 9.68421 0.299999 9.26316L8.8 0.315789C9.2 -0.105263 9.8 -0.105263 10.2 0.315789C10.6 0.736842 10.6 1.36842 10.2 1.78947L3.4 8.94737H23C23.6 8.94737 24 9.36842 24 10C24 10.6316 23.6 11.0526 23 11.0526Z" /></svg>Назад</a>
+                            <div class="header-mobile-menu-content">
+                                <ul>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-tanks.html">Емкости</a>
+                                        <ul>
+                                            <li><a href="catalogue-tanks.html">Емкости пластиковые</a></li>
+                                            <li><a href="catalogue-tanks.html">Емкости нержавеющие</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-cassettes.html">Кассеты для перевозки жидкостей</a>
+                                        <ul>
+                                            <li><a href="catalogue-cassettes.html#descr">Описание</a></li>
+                                            <li><a href="catalogue-cassettes.html#popular">Популярные конфигурации</a></li>
+                                            <li><a href="catalogue-cassettes.html#video">Видеообзор</a></li>
+                                            <li><a href="catalogue-cassettes.html#make">Создать свою конфигурацию</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-parts.html">Комплектующие к&nbsp;емкостям</a>
+                                        <ul>
+                                            <li><a href="catalogue-parts.html">Фильтры</a></li>
+                                            <li><a href="catalogue-parts.html">Крышки</a></li>
+                                            <li><a href="catalogue-parts.html">Фиттинги</a></li>
+                                            <li><a href="catalogue-parts.html">Шланги и рукава</a></li>
+                                            <li><a href="catalogue-parts.html">Хомуты</a></li>
+                                            <li><a href="catalogue-parts.html">Прочее</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Мотопомпы и насосы</a></li>
+                                    <li class="with-submenu">
+                                        <a href="#">Растворные узлы</a>
+                                        <ul>
+                                            <li><a href="#">Стационарные растворные узлы</a></li>
+                                            <li><a href="#">Мобильные растворные узлы</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Изделия из полимеров на&nbsp;заказ</a></li>
+                                    <li><a href="#">Прочая продукция</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header-menu">
+                            <ul>
+                                <li><a href="services.html">Услуги</a></li>
+                                <li><a href="delivery.html">Доставка</a></li>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-search">
+                            <form action="search.html" method="post">
+                                <div class="header-search-input"><input type="text" name="search" value="" class="required" placeholder="Поиск по товарам, категориям, артикулу" /></div>
+                                <div class="header-search-submit"><button type="submit"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 8.8H9.36L9.12 8.56C9.92 7.68 10.4 6.48 10.4 5.2C10.4 2.32 8.08 0 5.2 0C2.32 0 0 2.32 0 5.2C0 8.08 2.32 10.4 5.2 10.4C6.48 10.4 7.68 9.92 8.56 9.12L8.8 9.36V10L12.8 14L14 12.8L10 8.8V8.8ZM5.2 8.8C3.2 8.8 1.6 7.2 1.6 5.2C1.6 3.2 3.2 1.6 5.2 1.6C7.2 1.6 8.8 3.2 8.8 5.2C8.8 7.2 7.2 8.8 5.2 8.8V8.8Z" /></svg></button></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="header-location">
+                        <div class="header-city">
+                            <a href="windows/city.html" class="header-city-link window-link">Пенза</a>
+                            <div class="header-city-window">
+                                <div class="header-city-window-text">Ваш город — Пенза?</div>
+                                <div class="header-city-window-ctrl">
+                                    <div class="header-city-window-btn"><a href="#">Да</a></div>
+                                    <div class="header-city-window-link"><a href="windows/city.html" class="window-link">Выбрать другой</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-phone"><a href="tel:+78412980900">+7 (8412) 98-09-00</a></div>
+                        <div class="header-callback"><a href="windows/callback.html" class="window-link">Заказать звонок</a></div>
+                        <div class="header-contacts-mobile">
+                            <div class="header-contacts-mobile-phone"><a href="tel:+78412980900" class="btn-red">+7 (8412) 98-09-00</a></div>
+                            <div class="header-contacts-mobile-callback"><a href="windows/callback.html" class="window-link">Заказать звонок</a></div>
+                            <div class="header-contacts-mobile-email"><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="mobile-menu-link"></a>
+                </div>
+            </div>
+            <!-- header END -->
+
+            <!-- nav -->
+            <div class="nav">
+                <div class="container">
+                    <ul>
+                        <li class="with-submenu">
+                            <a href="#">Весь каталог</a>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-tanks.html">Емкости пластиковые</a></li>
+                                        <li><a href="catalogue-tanks.html">Емкости нержавеющие</a></li>
+                                    </ul>
+                                    <a href="catalogue-tanks.html">Емкости</a>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-cassettes.html#descr">Описание</a></li>
+                                        <li><a href="catalogue-cassettes.html#popular">Популярные конфигурации</a></li>
+                                        <li><a href="catalogue-cassettes.html#video">Видеообзор</a></li>
+                                        <li><a href="catalogue-cassettes.html#make">Создать свою конфигурацию</a></li>
+                                    </ul>
+                                    <a href="catalogue-cassettes.html">Кассеты для перевозки жидкостей</a>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-parts.html">Фильтры</a></li>
+                                        <li><a href="catalogue-parts.html">Крышки</a></li>
+                                        <li><a href="catalogue-parts.html">Фиттинги</a></li>
+                                        <li><a href="catalogue-parts.html">Шланги и рукава</a></li>
+                                        <li><a href="catalogue-parts.html">Хомуты</a></li>
+                                        <li><a href="catalogue-parts.html">Прочее</a></li>
+                                    </ul>
+                                    <a href="catalogue-parts.html">Комплектующие к&nbsp;емкостям</a>
+                                </li>
+                                <li><a href="#">Мотопомпы и насосы</a></li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Стационарные растворные узлы</a></li>
+                                        <li><a href="#">Мобильные растворные узлы</a></li>
+                                    </ul>
+                                    <a href="#">Растворные узлы</a>
+                                </li>
+                                <li><a href="#">Изделия из полимеров на&nbsp;заказ</a></li>
+                                <li><a href="#">Прочая продукция</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="catalogue-tanks.html">Емкости</a></li>
+                        <li><a href="catalogue-cassettes.html">Кассеты для перевозки</a></li>
+                        <li><a href="catalogue-parts.html">Комплектующие</a></li>
+                        <li><a href="#">Мотопомпы</a></li>
+                        <li><a href="#">Растворные узлы</a></li>
+                        <li><a href="#">Изделия из полимеров на заказ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- nav END -->
+
+            <div class="content-header">
+                <div class="container">
+                    <h1>Согласие на обработку персональных данных</h1>
+                </div>
+            </div>
+
+            <div class="back-link">
+                <div class="container">
+                    <a href="#"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 11.0526H3.4L10.2 18.2105C10.6 18.6316 10.6 19.2632 10.2 19.6842C10 19.8947 9.7 20 9.5 20C9.3 20 9 19.8947 8.8 19.6842L0.299999 10.7368C-0.1 10.3158 -0.1 9.68421 0.299999 9.26316L8.8 0.315789C9.2 -0.105263 9.8 -0.105263 10.2 0.315789C10.6 0.736842 10.6 1.36842 10.2 1.78947L3.4 8.94737H23C23.6 8.94737 24 9.36842 24 10C24 10.6316 23.6 11.0526 23 11.0526Z" /></svg>Назад</a>
+                </div>
+            </div>
+
+            <!-- content -->
+            <div class="content">
+                <!-- container -->
+                <div class="container">
+                    <p>Настоящим, я (далее — Лицо), даю свое согласие ООО «АСТ», юридический адрес: 440061, г. Пенза, ул. Насосная 3к2, оф.21 (далее — Компания) на обработку своих персональных данных, указанных при оформлении заявки на сайте Компании для обработки моего заказа, заявки или любого другого способа обращения в компаниию (далее Заказ), и коммуникации со мной в рамках обработки моего Заказа, а также иных сопряженных с этим целей в рамках действующего законодательства РФ и технических возможностей Компании.</p>
+                    <p>Обработка персональных данных Лица может осуществляться с помощью средств автоматизации и/или без использования средств автоматизации в соответствии с действующим законодательством РФ и положениями Компании. Настоящее согласие Лица на обработку его/ее персональных данных, указанных при оформлении Заказа на сайте Компании, направляемых (заполненных) с использованием настоящего сайта, действует с момента оформления Заказа на сайте Компании до момента его отзыва. Согласие на обработку персональных данных, указанных при оформлении Заказа на сайте Компании, направляемых (заполненных) с использованием настоящего сайта, может быть отозвано Лицом при подаче письменного заявления (отзыва) в Компанию. Обработка персональных данных Лица прекращается в течение 2 месяцев с момента получения Компанией письменного заявления (отзыва) Лица и/или в случае достижения цели обработки и уничтожается в срок и на условиях, установленных законом, если не предусмотрено иное. Обезличенные персональные данные Лица могут использоваться Компанией в статистических (и иных исследовательских целей) после получения заявления (отзыва) согласия, а также после достижения целей, для которых настоящее согласие было получено.</p>
+                    <p>Данный сайт позволяет ООО «АСТ» получать информацию, содержащую персональные данные Лица, а именно фамилия имя отчество, контактный телефон, адрес электронной почты, а также другие персональные данные, которые могут использоваться для идентификации Лица («Ваши персональные данные»), в случае, если Лицо добровольно предоставляет ее компании.</p>
+                    <p>Лицо даёт согласие ООО «АСТ» на обработку своих персональных данных, а именно: фамилия имя отчество, контактный телефон, адрес электронной почты, а также всех персональных данных, которые необходимы для связи с Лицом и для оформления договоров.</p>
+                    <p>В целях исполнения обязательств по договору Лицо предоставляет ООО «АСТ» право осуществлять любые действия (операции) со своими персональными данными без ограничения: сбор, запись, учет, систематизацию, хранение, уточнение (обновление, изменение), извлечение, накопление, обезличивание, блокирование, удаление, уничтожение; использование в статистических целях, в целях проведения анализа, в целях информирования Лица (с передачей по SMS или электронной почтой) о продуктах и услугах Компании, а также осуществлять любые иные действия с учетом действующего законодательства.</p>
+                    <p>Любая иная информация, передаваемая Лицом в связи с посещением сайта («Иная информация», которая не является персональными данными Лица и не может использоваться для идентификации Лица) может включаться в базы данных, которые принадлежат ООО «АСТ» или их представителям. ООО «АСТ» сохраняет все права на эти базы данных и информацию, которая в них хранится. Иная информация, которую мы собираем, может включать Ваш IP-адрес и прочую информацию, собираемую посредством cookie-файлов (см. ниже).</p>
+                    <p>Данный сайт может использовать технологию, известную как cookie-файл. Сookie-файл — это сообщение, которое веб-сервер высылает на компьютер Лица, когда Лицо заходит на сайт. При повторном посещении, наш сайт проверит, имеется ли на компьютере Лица один из наших сookie-файлов. Наши cookie-файлы увеличивают функциональность сайта и помогают нам более точно анализировать, как используется сайт.</p>
+                    <p>Данный сайт использует адреса Интернет-протокола (IP). IP-адрес — это номер, присваиваемый компьютеру Интернет-провайдером для доступа к Интернету. Обычно IP-адрес изменяется всякий раз, когда вы входите в Интернет (это«динамичный» адрес). Тем не менее, если используется высокоскоростное соединение, в зависимости от обстоятельств, возможно, что IP-адрес или даже cookie-файл, который мы используем, содержит идентифицируемую информацию. Это происходит потому, что при некоторых видах высокоскоростного соединения Ваш IP-адрес не изменяется («статичен») и может ассоциироваться с компьютером Лица. Мы используем IP-адрес Лица для сообщения общей информации по использованию сайта, а также для его доработки.</p>
+                    <p>Данный сайт использует технологию для определения местоположения Лица.</p>
+                    <p>Лицо обязано покинуть данный сайт, если не хочет, чтобы вышеперечисленные данные (cookie, данные об IP-адресе и местоположении) обрабатывались.</p>
+                    <p>Данный сайт не предназначен для лиц моложе 18 лет. Мы не собираем персональные данные лиц, которые по имеющейся у нас информации не достигли 18-летнего возраста. На данном сайте, где собирается информация, используется стандартное шифрование протокола защиты информации (SSL). Тем не менее, чтобы воспользоваться этой опцией, браузер должен поддерживать криптографическое закрытие (начиная с версии Internet Explorer 3.0 и далее). ООО «АСТ» оставляет за собой право предоставлять информацию государственным органам при соответствующих запросах или в случаях, предусмотренных законодательством.</p>
+                    <p>Для удаления информации о Лице из наших контактных списков, необходимо обращаться по следующему адресу: ООО «АСТ»: 440061, г. Пенза, ул. Насосная 3к2, оф.21, тел.: +7 (8412) 98-09-00 или по е-mail: ast-58@mail.ru</p>
+                    <p>Лицо может продолжать получать материалы, пока ведется обновление наших списков. Периодически Правила конфиденциальности веб-сайта могут обновляться. После обновления данные правила будут доступны на настоящей странице.</p>
+                    <div class="doc-link">
+                        <a href="#">
+                            <div class="doc-link-icon"><img src="images/pdf.svg" alt="" /></div>
+                            <div class="doc-link-text"><span>Политика конфиденциальности</span></div>
+                        </a>
+                    </div>
+                </div>
+                <!-- container END -->
+            </div>
+            <!-- content END -->
+
+            <div class="footer-callback">
+                <div class="footer-callback-title">Узнайте больше по&nbsp;телефону</div>
+                <a href="tel:+78412980900" class="footer-callback-phone">+7 (8412) 98-09-00</a>
+                <div class="footer-callback-link"><a href="windows/callback.html" class="window-link"><span>Заказать обратный звонок</span></a></div>
+                <div class="footer-contacts-link"><a href="contacts.html#feedback-form">Форма обратной связи</a></div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon"></div>
+                        <div class="footer-logo-title">АгроСтройТорг</div>
+                    </div>
+
+                    <div class="footer-contacts footer-contacts-mobile">
+                        <div class="footer-contacts-address">440061, г. Пенза, ул. Насосная 3к2, оф.21</div>
+                        <div class="footer-contacts-links">
+                            <p><a href="tel:+78412980900">+7 (8412) 98-09-00</a></p>
+                            <p><a href="tel:+78412980500">+7 (8412) 98-05-00</a></p>
+                            <p><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></p>
+                        </div>
+                        <div class="footer-contacts-schedule">Режим работы: пн-пт 9:00-18:00</div>
+                        <div class="footer-contacts-delivery">Доставка из г. Пензы: от 1 дня</div>
+                    </div>
+
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="services.html">Услуги</a></li>
+                            <li><a href="delivery.html">Доставка</a></li>
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-address">440061, г. Пенза, ул. Насосная 3к2, оф.21</div>
+                        <div class="footer-contacts-links">
+                            <p><a href="tel:+78412980900">+7 (8412) 98-09-00</a></p>
+                            <p><a href="tel:+78412980500">+7 (8412) 98-05-00</a></p>
+                            <p><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></p>
+                        </div>
+                        <div class="footer-contacts-schedule">Режим работы: пн-пт 9:00-18:00</div>
+                        <div class="footer-contacts-delivery">Доставка из г. Пензы: от 1 дня</div>
+                    </div>
+
+                    <div class="footer-copyrights">© ООО «АСТ», 2018</div>
+                    <div class="footer-policy"><a href="policy.html">Пользовательское соглашение</a></div>
+                    <div class="footer-developer"><a href="http://7pap.ru" target="_blank">Дизайн и разработка: <img src="images/7pap.svg" alt="" /></a></div>
+                </div>
+            </div>
+            <!-- footer END -->
+
+            <div class="cookie-window">
+                <div class="cookie-window-text">Чтобы вам было удобнее пользоваться сайтом, мы используем cookies для сбора технической информации, такой как IP-адрес вашего местоположения.<br /> Продолжая использовать наш сайт, вы соглашаетесь с использованием файлов cookies.</div>
+                <div class="cookie-window-btn"><a href="#">Согласен</a></div>
+                <div class="cookie-window-link"><a href="policy.html">Подробнее</a></div>
+            </div>
+
+        </div>
+        <!-- wrapper END -->
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/nouislider/nouislider.min.js"></script>
+        <script src="js/nouislider/wNumb.js"></script>
+        <script src="js/cookie/jquery.cookie.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>

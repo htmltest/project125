@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>АСТ</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="js/nouislider/nouislider.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.css" />
+        <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- header -->
+            <div class="header">
+                <div class="container">
+                    <div class="header-logo">
+                        <div class="logo"><a href="index.html"></a></div>
+                        <div class="logo-title">АгроСтройТорг</div>
+                    </div>
+
+                    <div class="header-content">
+                        <div class="header-mobile-menu">
+                            <a href="#" class="header-mobile-menu-link">Каталог<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 11.0526H3.4L10.2 18.2105C10.6 18.6316 10.6 19.2632 10.2 19.6842C10 19.8947 9.7 20 9.5 20C9.3 20 9 19.8947 8.8 19.6842L0.299999 10.7368C-0.1 10.3158 -0.1 9.68421 0.299999 9.26316L8.8 0.315789C9.2 -0.105263 9.8 -0.105263 10.2 0.315789C10.6 0.736842 10.6 1.36842 10.2 1.78947L3.4 8.94737H23C23.6 8.94737 24 9.36842 24 10C24 10.6316 23.6 11.0526 23 11.0526Z" /></svg></a>
+                            <a href="#" class="header-mobile-menu-back"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 11.0526H3.4L10.2 18.2105C10.6 18.6316 10.6 19.2632 10.2 19.6842C10 19.8947 9.7 20 9.5 20C9.3 20 9 19.8947 8.8 19.6842L0.299999 10.7368C-0.1 10.3158 -0.1 9.68421 0.299999 9.26316L8.8 0.315789C9.2 -0.105263 9.8 -0.105263 10.2 0.315789C10.6 0.736842 10.6 1.36842 10.2 1.78947L3.4 8.94737H23C23.6 8.94737 24 9.36842 24 10C24 10.6316 23.6 11.0526 23 11.0526Z" /></svg>Назад</a>
+                            <div class="header-mobile-menu-content">
+                                <ul>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-tanks.html">Емкости</a>
+                                        <ul>
+                                            <li><a href="catalogue-tanks.html">Емкости пластиковые</a></li>
+                                            <li><a href="catalogue-tanks.html">Емкости нержавеющие</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-cassettes.html">Кассеты для перевозки жидкостей</a>
+                                        <ul>
+                                            <li><a href="catalogue-cassettes.html#descr">Описание</a></li>
+                                            <li><a href="catalogue-cassettes.html#popular">Популярные конфигурации</a></li>
+                                            <li><a href="catalogue-cassettes.html#video">Видеообзор</a></li>
+                                            <li><a href="catalogue-cassettes.html#make">Создать свою конфигурацию</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-parts.html">Комплектующие к&nbsp;емкостям</a>
+                                        <ul>
+                                            <li><a href="catalogue-parts.html">Фильтры</a></li>
+                                            <li><a href="catalogue-parts.html">Крышки</a></li>
+                                            <li><a href="catalogue-parts.html">Фиттинги</a></li>
+                                            <li><a href="catalogue-parts.html">Шланги и рукава</a></li>
+                                            <li><a href="catalogue-parts.html">Хомуты</a></li>
+                                            <li><a href="catalogue-parts.html">Прочее</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Мотопомпы и насосы</a></li>
+                                    <li class="with-submenu">
+                                        <a href="#">Растворные узлы</a>
+                                        <ul>
+                                            <li><a href="#">Стационарные растворные узлы</a></li>
+                                            <li><a href="#">Мобильные растворные узлы</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Изделия из полимеров на&nbsp;заказ</a></li>
+                                    <li><a href="#">Прочая продукция</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header-menu">
+                            <ul>
+                                <li><a href="services.html">Услуги</a></li>
+                                <li><a href="delivery.html">Доставка</a></li>
+                                <li class="active"><a href="about.html">О компании</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-search">
+                            <form action="search.html" method="post">
+                                <div class="header-search-input"><input type="text" name="search" value="" class="required" placeholder="Поиск по товарам, категориям, артикулу" /></div>
+                                <div class="header-search-submit"><button type="submit"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 8.8H9.36L9.12 8.56C9.92 7.68 10.4 6.48 10.4 5.2C10.4 2.32 8.08 0 5.2 0C2.32 0 0 2.32 0 5.2C0 8.08 2.32 10.4 5.2 10.4C6.48 10.4 7.68 9.92 8.56 9.12L8.8 9.36V10L12.8 14L14 12.8L10 8.8V8.8ZM5.2 8.8C3.2 8.8 1.6 7.2 1.6 5.2C1.6 3.2 3.2 1.6 5.2 1.6C7.2 1.6 8.8 3.2 8.8 5.2C8.8 7.2 7.2 8.8 5.2 8.8V8.8Z" /></svg></button></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="header-location">
+                        <div class="header-city">
+                            <a href="windows/city.html" class="header-city-link window-link">Пенза</a>
+                            <div class="header-city-window">
+                                <div class="header-city-window-text">Ваш город — Пенза?</div>
+                                <div class="header-city-window-ctrl">
+                                    <div class="header-city-window-btn"><a href="#">Да</a></div>
+                                    <div class="header-city-window-link"><a href="windows/city.html" class="window-link">Выбрать другой</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-phone"><a href="tel:+78412980900">+7 (8412) 98-09-00</a></div>
+                        <div class="header-callback"><a href="windows/callback.html" class="window-link">Заказать звонок</a></div>
+                        <div class="header-contacts-mobile">
+                            <div class="header-contacts-mobile-phone"><a href="tel:+78412980900" class="btn-red">+7 (8412) 98-09-00</a></div>
+                            <div class="header-contacts-mobile-callback"><a href="windows/callback.html" class="window-link">Заказать звонок</a></div>
+                            <div class="header-contacts-mobile-email"><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="mobile-menu-link"></a>
+                </div>
+            </div>
+            <!-- header END -->
+
+            <!-- nav -->
+            <div class="nav">
+                <div class="container">
+                    <ul>
+                        <li class="with-submenu">
+                            <a href="#">Весь каталог</a>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-tanks.html">Емкости пластиковые</a></li>
+                                        <li><a href="catalogue-tanks.html">Емкости нержавеющие</a></li>
+                                    </ul>
+                                    <a href="catalogue-tanks.html">Емкости</a>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-cassettes.html#descr">Описание</a></li>
+                                        <li><a href="catalogue-cassettes.html#popular">Популярные конфигурации</a></li>
+                                        <li><a href="catalogue-cassettes.html#video">Видеообзор</a></li>
+                                        <li><a href="catalogue-cassettes.html#make">Создать свою конфигурацию</a></li>
+                                    </ul>
+                                    <a href="catalogue-cassettes.html">Кассеты для перевозки жидкостей</a>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-parts.html">Фильтры</a></li>
+                                        <li><a href="catalogue-parts.html">Крышки</a></li>
+                                        <li><a href="catalogue-parts.html">Фиттинги</a></li>
+                                        <li><a href="catalogue-parts.html">Шланги и рукава</a></li>
+                                        <li><a href="catalogue-parts.html">Хомуты</a></li>
+                                        <li><a href="catalogue-parts.html">Прочее</a></li>
+                                    </ul>
+                                    <a href="catalogue-parts.html">Комплектующие к&nbsp;емкостям</a>
+                                </li>
+                                <li><a href="#">Мотопомпы и насосы</a></li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Стационарные растворные узлы</a></li>
+                                        <li><a href="#">Мобильные растворные узлы</a></li>
+                                    </ul>
+                                    <a href="#">Растворные узлы</a>
+                                </li>
+                                <li><a href="#">Изделия из полимеров на&nbsp;заказ</a></li>
+                                <li><a href="#">Прочая продукция</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="catalogue-tanks.html">Емкости</a></li>
+                        <li><a href="catalogue-cassettes.html">Кассеты для перевозки</a></li>
+                        <li><a href="catalogue-parts.html">Комплектующие</a></li>
+                        <li><a href="#">Мотопомпы</a></li>
+                        <li><a href="#">Растворные узлы</a></li>
+                        <li><a href="#">Изделия из полимеров на заказ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- nav END -->
+
+            <div class="content-header">
+                <div class="container">
+                    <h1>О компании</h1>
+                </div>
+            </div>
+
+            <!-- content menu -->
+            <div class="content-menu">
+                <div class="container">
+                    <div class="content-menu-inner">
+                        <div class="content-menu-list">
+                            <div class="content-menu-list-inner">
+                                <div class="content-menu-list-ul">
+                                    <div class="content-menu-list-li"><a href="about.html">Основные сведения</a></div>
+                                    <div class="content-menu-list-li active"><a href="about-produce.html">Наше производство</a></div>
+                                    <div class="content-menu-list-li"><a href="about-news.html">Новости</a></div>
+                                    <div class="content-menu-list-li"><a href="#">Статьи</a></div>
+                                </div>
+                            </div>
+                            <div class="content-menu-list-active"></div>
+                            <div class="content-menu-list-next"><svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.703068" d="M1 6.02632H10.8L7.4 9.60526C7.2 9.81579 7.2 10.1316 7.4 10.3421C7.5 10.4474 7.65 10.5 7.75 10.5C7.85 10.5 8 10.4474 8.1 10.3421L12.35 5.86842C12.55 5.65789 12.55 5.34211 12.35 5.13158L8.1 0.657895C7.9 0.447368 7.6 0.447368 7.4 0.657895C7.2 0.868421 7.2 1.18421 7.4 1.39474L10.8 4.97368H1C0.7 4.97368 0.5 5.18421 0.5 5.5C0.5 5.81579 0.7 6.02632 1 6.02632Z" /></svg></div>
+                        </div>
+                        <div class="about-questionnaire-link"><a href="windows/questionnaire.html" class="window-link"><img src="images/questionnaire.svg" alt="" /><span>Скачать опросный лист</span></a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- content menu END -->
+
+            <!-- container -->
+            <div class="container">
+                <div class="produce-menu">
+                    <ul>
+                        <li><a href="#section1">Ротоформовочное производство</a></li>
+                        <li><a href="#section2">Изготовление емкостей методом экструзионной сварки</a></li>
+                        <li><a href="#section3">Производство емкостей из нержавеющей стали</a></li>
+                        <li><a href="#section4">Как заказ попадает на производство?</a></li>
+                    </ul>
+                </div>
+
+                <h2 id="section1">Ротоформовочное производство</h2>
+
+                <!-- produce block -->
+                <div class="produce-block">
+                    <div class="produce-block-text">
+                        <p>Ротоформовочное производство стоит выбрать, если требуется:</p>
+                        <ul>
+                            <li>изготовить партию или серию изделий из качественного полиэтилена, которые мы разработаем на основе предпочтений клиента или по уже заданным параметрам;</li>
+                            <li>изготовить партию или серию изделий с помощью уже созданной формы. Вы можете предоставить свою готовую форму, а можете приобрести ее с нашей помощью.</li>
+                        </ul>
+                        <p>Конструкторский отдел спроектирует ваше изделие, а специалисты изготовят качественную форму. В нашем цеху установлена ротоформовочная машина, с помощью которой мы производим бесшовные емкости из полиэтилена объемом от 30 до 10 000 литров.</p>
+                        <p>Приобретенная у нас форма, будучи уже в вашей собственности, может храниться на нашем производстве. Мы гарантируем ее неприкосновенность либо эксплуатацию только по вашему указанию.</p>
+                    </div>
+                    <div class="produce-block-side">
+                        <div class="produce-block-side-from">от</div>
+                        <div class="produce-block-side-from-value">30</div>
+                        <div class="produce-block-side-from">до</div>
+                        <div class="produce-block-side-from-value">10000</div>
+                        <div class="produce-block-side-from">литров</div>
+                        <div class="produce-block-side-text">возможный объем наших бесшовных емкостей из полиэтилена, произведенных методом ротоформования</div>
+                    </div>
+                </div>
+                <!-- produce block END -->
+            </div>
+            <!-- container END -->
+
+            <!-- produce list -->
+            <div class="produce-list">
+                <div class="container">
+                    <h3>Сферы применения</h3>
+                    <div class="produce-list-inner">
+                        <div class="produce-list-item">
+                            <div class="produce-list-item-inner">
+                                <div class="produce-list-item-photo">
+                                    <img src="files/produce-01.jpg" alt="" />
+                                    <div class="produce-list-item-title">Сельское хозяйство, животноводство</div>
+                                </div>
+                                <div class="produce-list-item-text">
+                                    <ul>
+                                        <li>емкости для содержания домашнего скота, подвоза воды и растворов для опрыскивания полей</li>
+                                        <li>емкости для хранения дизельного топлива</li>
+                                        <li>комплектующие для производства с/х оборудования</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="produce-list-item">
+                            <div class="produce-list-item-inner">
+                                <div class="produce-list-item-photo">
+                                    <img src="files/produce-02.jpg" alt="" />
+                                    <div class="produce-list-item-title">Пищевая промышленность</div>
+                                </div>
+                                <div class="produce-list-item-text">
+                                    <ul>
+                                        <li>емкости для для хранения и транспортировки продуктов питания: питьевой воды, растительных масел, молока и так далее</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="produce-list-item">
+                            <div class="produce-list-item-inner">
+                                <div class="produce-list-item-photo">
+                                    <img src="files/produce-03.jpg" alt="" />
+                                    <div class="produce-list-item-title">Нефтехимическая сфера</div>
+                                </div>
+                                <div class="produce-list-item-text">
+                                    <ul>
+                                        <li>емкости для работы с химически агрессивными веществами</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="produce-list-item">
+                            <div class="produce-list-item-inner">
+                                <div class="produce-list-item-photo">
+                                    <img src="files/produce-04.jpg" alt="" />
+                                    <div class="produce-list-item-title">Жилищно- коммунальное хозяйство</div>
+                                </div>
+                                <div class="produce-list-item-text">
+                                    <ul>
+                                        <li>емкости для коммунальной техники, для хранения и транспортировки технической воды, пожарные резервуары</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- produce list END -->
+
+            <!-- container -->
+            <div class="container">
+                <div class="produce-section2">
+                    <h2 id="section2">Изготовление емкостей методом экструзионной сварки из полиэтиленовых и полипропиленовых листов</h2>
+                    <!-- produce block -->
+                    <div class="produce-block">
+                        <div class="produce-block-text">
+                            <p>Если вам нужна емкость или резервуар по индивидуальному заказу, то вам подойдет сварка экструдером — это качественное соединение листов полиэтилена или полипропилена. Ее применяют для создания изделий любой сложности, с большим количеством перегородок, ниш, полостей и сложной геометрической формы, объемом от 5 литров и выше.</p>
+                            <p>Подобные емкости легко дополняются трубопроводами, электронагревателями, мешалками, датчиками уровня, насосами, запорной арматурой и прочим оборудованием и устройствами.<br /> Все ваши пожелания будут учтены специалистами конструкторского отдела.</p>
+                            <p>Любое изделие может быть собрано на территории завода. Однако крупногабаритную продукцию специалисты собирают на территории заказчика, доставляя блоки на объект. Чаще всего это бывает с заказами сложной формы, такими как бассейн.<br /> Этот вид производства и материалов сможет значительно удешевить конечную стоимость товаров, по сравнению с подобными, но из нержавеющей стали.</p>
+                        </div>
+                        <div class="produce-block-side">
+                            <div class="produce-block-side-from">от</div>
+                            <div class="produce-block-side-from-value">5</div>
+                            <div class="produce-block-side-from">литров</div>
+                            <div class="produce-block-side-from">до</div>
+                            <div class="produce-block-side-from-value"><img src="images/produce-infinity.svg" alt="" /></div>
+                            <div class="produce-block-side-text">сварка экструдером позволяет решать самые специфические задачи</div>
+                        </div>
+                    </div>
+                    <!-- produce block END -->
+                </div>
+            </div>
+            <!-- container END -->
+
+            <!-- produce list -->
+            <div class="produce-list">
+                <div class="container">
+                    <h3>Сферы применения</h3>
+                    <div class="produce-list-inner">
+                        <div class="produce-list-item">
+                            <div class="produce-list-item-inner">
+                                <div class="produce-list-item-photo">
+                                    <img src="files/produce-05.jpg" alt="" />
+                                    <div class="produce-list-item-title">Быт физических лиц</div>
+                                </div>
+                                <div class="produce-list-item-text">
+                                    <ul>
+                                        <li>бассейны любой формы и сложности</li>
+                                        <li>емкости для хранения больших запасов воды</li>
+                                        <li>баки для душа</li>
+                                        <li>резервуары для септиков, жироуловителей и прочего</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="produce-list-item">
+                            <div class="produce-list-item-inner">
+                                <div class="produce-list-item-photo">
+                                    <img src="files/produce-01.jpg" alt="" />
+                                    <div class="produce-list-item-title">Сельское хозяйство, животноводство</div>
+                                </div>
+                                <div class="produce-list-item-text">
+                                    <ul>
+                                        <li>емкости для содержания домашнего скота</li>
+                                        <li>емкости для хранения и транспортировки растений и цветов</li>
+                                        <li>для водоподготовки</li>
+                                        <li>для очистки сточных вод, оборудования УЗВ</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="produce-list-item">
+                            <div class="produce-list-item-inner">
+                                <div class="produce-list-item-photo">
+                                    <img src="files/produce-02.jpg" alt="" />
+                                    <div class="produce-list-item-title">Пищевая промышленность</div>
+                                </div>
+                                <div class="produce-list-item-text">
+                                    <ul>
+                                        <li>емкости для для хранения и транспортировки продуктов питания: питьевой воды, растительных масел, молока и так далее</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="produce-list-item">
+                            <div class="produce-list-item-inner">
+                                <div class="produce-list-item-photo">
+                                    <img src="files/produce-03.jpg" alt="" />
+                                    <div class="produce-list-item-title">Нефтехимическая сфера</div>
+                                </div>
+                                <div class="produce-list-item-text">
+                                    <ul>
+                                        <li>емкости для работы с химически агрессивными веществами</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="produce-list-item">
+                            <div class="produce-list-item-inner">
+                                <div class="produce-list-item-photo">
+                                    <img src="files/produce-06.jpg" alt="" />
+                                    <div class="produce-list-item-title">Строительство</div>
+                                </div>
+                                <div class="produce-list-item-text">
+                                    <ul>
+                                        <li>емкости для фонтанов</li>
+                                        <li>резервуары для воды, прудов, колодцев, КНС</li>
+                                        <li>гидроизоляция бетонных поверхностей, воздуховодов</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="produce-list-item">
+                            <div class="produce-list-item-inner">
+                                <div class="produce-list-item-photo">
+                                    <img src="files/produce-07.jpg" alt="" />
+                                    <div class="produce-list-item-title">Машиностроение</div>
+                                </div>
+                                <div class="produce-list-item-text">
+                                    <ul>
+                                        <li>гальванические ванны</li>
+                                        <li>флотаторы</li>
+                                        <li>емкости-отстойники</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- produce list END -->
+
+            <!-- container -->
+            <div class="container">
+                <div class="produce-section2">
+                    <h2 id="section3">Производство емкостей из нержавеющей стали</h2>
+                    <!-- produce block -->
+                    <div class="produce-block">
+                        <div class="produce-block-text">
+                            <p>Мы можем спроектировать вертикальные и горизонтальные емкости различной сложности. Для их производства мы используем нержавеющую сталь отечественного и импортного производства.</p>
+                            <p>Мы производим емкости до 12 кубов с плоским, коническим и сферическим дном, а также резервуары и миксеры для растворения солей. При необходимости мы изготовим и сопутствующие металлоконструкции, например, перемешивающие устройства. Любое изделие мы доукомплектуем датчиками, оборудуем дыхательными клапанами, встроенными люками, лазами и так далее.</p>
+                            <p>Заполните <a href="windows/questionnaire.html" class="window-link questionnaire-link">опросный лист</a>, указав в нем все предпочтения по изделию. Наши менеджеры оперативно сделают расчет и предложат индивидуальные условия.</p>
+                            <h3>Сферы применения</h3>
+                            <p>Наши емкости могут быть использованы на сельскохозяйственных предприятиях, газо- и нефтеперерабатывающих заводах, автобазах, АЗС, на пищевых производствах и в транспортных компаниях.</p>
+                        </div>
+                        <div class="produce-block-side">
+                            <div class="produce-block-side-from">до</div>
+                            <div class="produce-block-side-from-value">12000</div>
+                            <div class="produce-block-side-from">литров</div>
+                            <div class="produce-block-side-text">возможный объем наших емкостей из нержавеющей стали</div>
+                        </div>
+                    </div>
+                    <!-- produce block END -->
+                </div>
+            </div>
+            <!-- container END -->
+
+            <!-- produce questionnaire -->
+            <div class="produce-questionnaire">
+                <div class="container">
+                    <div class="produce-questionnaire-title">Укажите свои предпочтения<br /> по изделию в опросном листе</div>
+                    <div class="produce-questionnaire-text">Отправьте заполненный лист нам на почту: welcome@ast.ru<br /> или приезжайте в офис: г. Пенза, ул. Насосная 3к2, оф.21<br /> пн-пт 9:00-18:00</div>
+                    <div class="produce-questionnaire-link"><a href="windows/questionnaire.html" class="window-link btn-blue">Скачать опросный лист</a></div>
+                </div>
+            </div>
+            <!-- produce questionnaire END -->
+
+            <!-- container -->
+            <div class="container">
+                <div class="produce-section2">
+                    <h2 id="section4">Как заказ попадает в производство?</h2>
+                    <div class="produce-steps">
+                        <div class="produce-step">
+                            <div class="produce-step-number">1</div>
+                            <div class="produce-step-text">
+                                <h3>Уточняем задачи</h3>
+                                <p>Мы проектируем и производим емкости практически под любой запрос.<br /> Укажите в <a href="windows/questionnaire.html" class="window-link questionnaire-link">опросном листе</a> все предпочтения по заказу, в т.ч. планы по эксплуатации — и менеджер создаст техническое задание на разработку на основе полученной от вас информации.<br /> Если у вас нет потребности в индивидуальном заказе, то менеджер предложит вам лучший вариант готовой продукции, как из нашего каталога, так и других производителей.</p>
+                            </div>
+                        </div>
+                        <div class="produce-step">
+                            <div class="produce-step-number">2</div>
+                            <div class="produce-step-text">
+                                <h3>Конструкторский отдел создает проект изделия</h3>
+                                <p>На основе технического задания специалист конструкторского отдела разрабатывает 3D-проект вашего изделия. С помощью специальной программы SolidWorks мы проектируем изделия любой степени сложности и назначения. Проект, созданный в этой программе, дает инженерный анализ будущего изделия: какова его прочность, устойчивость, гидродинамика, теплопередача и прочие полезные характеристики.</p>
+                            </div>
+                        </div>
+                        <div class="produce-step">
+                            <div class="produce-step-number">3</div>
+                            <div class="produce-step-text">
+                                <h3>Согласуем проект, передаем в производство</h3>
+                                <p>Менеджер представляет вам коммерческое предложение, в которое входят: 3D-проект, описание изделия, его комплектация и цена. Если вас все устраивает, мы подписываем договор.<br /> После этого проект на изготовление продукции передается в производство.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- container END -->
+
+            <!-- produce prefs -->
+            <div class="produce-prefs">
+                <div class="container">
+                    <h2>Наши емкости сделаны по европейским стандартам</h2>
+                    <div class="produce-prefs-list">
+                        <div class="produce-prefs-item">
+                            <div class="produce-prefs-item-icon"><img src="images/produce-prefs-1.svg" alt="" /></div>
+                            <div class="produce-prefs-item-title">Долговечность</div>
+                            <div class="produce-prefs-item-text">Средний срок службы производимых и&nbsp;поставляемых нами изделий — 100 лет</div>
+                        </div>
+                        <div class="produce-prefs-item">
+                            <div class="produce-prefs-item-icon"><img src="images/produce-prefs-2.svg" alt="" /></div>
+                            <div class="produce-prefs-item-title">Малый вес</div>
+                            <div class="produce-prefs-item-text">Проще проводить строительно-монтажные и&nbsp;погрузочные работы</div>
+                        </div>
+                        <div class="produce-prefs-item">
+                            <div class="produce-prefs-item-icon"><img src="images/produce-prefs-3.svg" alt="" /></div>
+                            <div class="produce-prefs-item-title">Температура эксплуатации<br /> от -40°С до +50°С</div>
+                            <div class="produce-prefs-item-text">Не трескается на морозе и&nbsp;не&nbsp;теряет формы под воздействием солнца</div>
+                        </div>
+                        <div class="produce-prefs-item">
+                            <div class="produce-prefs-item-icon"><img src="images/produce-prefs-4.svg" alt="" /></div>
+                            <div class="produce-prefs-item-title">Гигиеничность</div>
+                            <div class="produce-prefs-item-text">Высокие гигиенические свойства, позволяющие хранить пищевые продукты</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- produce prefs END -->
+
+            <!-- container -->
+            <div class="container">
+                <div class="produce-why">
+                    <h2>Почему мы выбираем дорогое и высококлассное сырье?</h2>
+                    <p>Чтобы качество нашей продукции оставалось стабильным, мы закупаем сырье южнокорейского производителя. Благодаря этому, каждое изделие обладает оптимальными механическими свойствами — пластичностью и упругостью. Наш полиэтилен позволяет дольше эксплуатировать изделия, выдерживая разные изменения температуры, например ее увеличение до 50° и резкое похолодание. В изделиях с увеличенной толщиной стенки можно перевозить жидкости в полтора раза плотнее воды. Сырье содержит добавки, которые обеспечивают стойкость емкостей к ультрафиолетовому излучению.</p>
+                    <p>Для безопасного хранения и перевозки вашего сырья или готового продукта в наших емкостях:</p>
+                    <ul>
+                        <li>мы не изменяем нашему сырью с аналогами и не заменяем его более дешевым;</li>
+                        <li>мы не применяем вторичное сырье, не добавляем полиэтилен низкого давления;</li>
+                        <li>мы не используем добавок, которые снижают себестоимость изделия, а вместе с тем срок его службы и прочностные характеристики.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- container END -->
+
+            <div class="footer-callback">
+                <div class="footer-callback-title">Узнайте больше по&nbsp;телефону</div>
+                <a href="tel:+78412980900" class="footer-callback-phone">+7 (8412) 98-09-00</a>
+                <div class="footer-callback-link"><a href="windows/callback.html" class="window-link"><span>Заказать обратный звонок</span></a></div>
+                <div class="footer-contacts-link"><a href="contacts.html#feedback-form">Форма обратной связи</a></div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon"></div>
+                        <div class="footer-logo-title">АгроСтройТорг</div>
+                    </div>
+
+                    <div class="footer-contacts footer-contacts-mobile">
+                        <div class="footer-contacts-address">440061, г. Пенза, ул. Насосная 3к2, оф.21</div>
+                        <div class="footer-contacts-links">
+                            <p><a href="tel:+78412980900">+7 (8412) 98-09-00</a></p>
+                            <p><a href="tel:+78412980500">+7 (8412) 98-05-00</a></p>
+                            <p><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></p>
+                        </div>
+                        <div class="footer-contacts-schedule">Режим работы: пн-пт 9:00-18:00</div>
+                        <div class="footer-contacts-delivery">Доставка из г. Пензы: от 1 дня</div>
+                    </div>
+
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="services.html">Услуги</a></li>
+                            <li><a href="delivery.html">Доставка</a></li>
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-address">440061, г. Пенза, ул. Насосная 3к2, оф.21</div>
+                        <div class="footer-contacts-links">
+                            <p><a href="tel:+78412980900">+7 (8412) 98-09-00</a></p>
+                            <p><a href="tel:+78412980500">+7 (8412) 98-05-00</a></p>
+                            <p><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></p>
+                        </div>
+                        <div class="footer-contacts-schedule">Режим работы: пн-пт 9:00-18:00</div>
+                        <div class="footer-contacts-delivery">Доставка из г. Пензы: от 1 дня</div>
+                    </div>
+
+                    <div class="footer-copyrights">© ООО «АСТ», 2018</div>
+                    <div class="footer-policy"><a href="policy.html">Пользовательское соглашение</a></div>
+                    <div class="footer-developer"><a href="http://7pap.ru" target="_blank">Дизайн и разработка: <img src="images/7pap.svg" alt="" /></a></div>
+                </div>
+            </div>
+            <!-- footer END -->
+
+            <div class="cookie-window">
+                <div class="cookie-window-text">Чтобы вам было удобнее пользоваться сайтом, мы используем cookies для сбора технической информации, такой как IP-адрес вашего местоположения.<br /> Продолжая использовать наш сайт, вы соглашаетесь с использованием файлов cookies.</div>
+                <div class="cookie-window-btn"><a href="#">Согласен</a></div>
+                <div class="cookie-window-link"><a href="policy.html">Подробнее</a></div>
+            </div>
+
+        </div>
+        <!-- wrapper END -->
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/nouislider/nouislider.min.js"></script>
+        <script src="js/nouislider/wNumb.js"></script>
+        <script src="js/cookie/jquery.cookie.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>АСТ</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="js/nouislider/nouislider.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.css" />
+        <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- header -->
+            <div class="header">
+                <div class="container">
+                    <div class="header-logo">
+                        <div class="logo"><a href="index.html"></a></div>
+                        <div class="logo-title">АгроСтройТорг</div>
+                    </div>
+
+                    <div class="header-content">
+                        <div class="header-mobile-menu">
+                            <a href="#" class="header-mobile-menu-link">Каталог<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 11.0526H3.4L10.2 18.2105C10.6 18.6316 10.6 19.2632 10.2 19.6842C10 19.8947 9.7 20 9.5 20C9.3 20 9 19.8947 8.8 19.6842L0.299999 10.7368C-0.1 10.3158 -0.1 9.68421 0.299999 9.26316L8.8 0.315789C9.2 -0.105263 9.8 -0.105263 10.2 0.315789C10.6 0.736842 10.6 1.36842 10.2 1.78947L3.4 8.94737H23C23.6 8.94737 24 9.36842 24 10C24 10.6316 23.6 11.0526 23 11.0526Z" /></svg></a>
+                            <a href="#" class="header-mobile-menu-back"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 11.0526H3.4L10.2 18.2105C10.6 18.6316 10.6 19.2632 10.2 19.6842C10 19.8947 9.7 20 9.5 20C9.3 20 9 19.8947 8.8 19.6842L0.299999 10.7368C-0.1 10.3158 -0.1 9.68421 0.299999 9.26316L8.8 0.315789C9.2 -0.105263 9.8 -0.105263 10.2 0.315789C10.6 0.736842 10.6 1.36842 10.2 1.78947L3.4 8.94737H23C23.6 8.94737 24 9.36842 24 10C24 10.6316 23.6 11.0526 23 11.0526Z" /></svg>Назад</a>
+                            <div class="header-mobile-menu-content">
+                                <ul>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-tanks.html">Емкости</a>
+                                        <ul>
+                                            <li><a href="catalogue-tanks.html">Емкости пластиковые</a></li>
+                                            <li><a href="catalogue-tanks.html">Емкости нержавеющие</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-cassettes.html">Кассеты для перевозки жидкостей</a>
+                                        <ul>
+                                            <li><a href="catalogue-cassettes.html#descr">Описание</a></li>
+                                            <li><a href="catalogue-cassettes.html#popular">Популярные конфигурации</a></li>
+                                            <li><a href="catalogue-cassettes.html#video">Видеообзор</a></li>
+                                            <li><a href="catalogue-cassettes.html#make">Создать свою конфигурацию</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-parts.html">Комплектующие к&nbsp;емкостям</a>
+                                        <ul>
+                                            <li><a href="catalogue-parts.html">Фильтры</a></li>
+                                            <li><a href="catalogue-parts.html">Крышки</a></li>
+                                            <li><a href="catalogue-parts.html">Фиттинги</a></li>
+                                            <li><a href="catalogue-parts.html">Шланги и рукава</a></li>
+                                            <li><a href="catalogue-parts.html">Хомуты</a></li>
+                                            <li><a href="catalogue-parts.html">Прочее</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Мотопомпы и насосы</a></li>
+                                    <li class="with-submenu">
+                                        <a href="#">Растворные узлы</a>
+                                        <ul>
+                                            <li><a href="#">Стационарные растворные узлы</a></li>
+                                            <li><a href="#">Мобильные растворные узлы</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Изделия из полимеров на&nbsp;заказ</a></li>
+                                    <li><a href="#">Прочая продукция</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header-menu">
+                            <ul>
+                                <li><a href="services.html">Услуги</a></li>
+                                <li><a href="delivery.html">Доставка</a></li>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-search">
+                            <form action="search.html" method="post">
+                                <div class="header-search-input"><input type="text" name="search" value="" class="required" placeholder="Поиск по товарам, категориям, артикулу" /></div>
+                                <div class="header-search-submit"><button type="submit"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 8.8H9.36L9.12 8.56C9.92 7.68 10.4 6.48 10.4 5.2C10.4 2.32 8.08 0 5.2 0C2.32 0 0 2.32 0 5.2C0 8.08 2.32 10.4 5.2 10.4C6.48 10.4 7.68 9.92 8.56 9.12L8.8 9.36V10L12.8 14L14 12.8L10 8.8V8.8ZM5.2 8.8C3.2 8.8 1.6 7.2 1.6 5.2C1.6 3.2 3.2 1.6 5.2 1.6C7.2 1.6 8.8 3.2 8.8 5.2C8.8 7.2 7.2 8.8 5.2 8.8V8.8Z" /></svg></button></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="header-location">
+                        <div class="header-city">
+                            <a href="windows/city.html" class="header-city-link window-link">Пенза</a>
+                            <div class="header-city-window">
+                                <div class="header-city-window-text">Ваш город — Пенза?</div>
+                                <div class="header-city-window-ctrl">
+                                    <div class="header-city-window-btn"><a href="#">Да</a></div>
+                                    <div class="header-city-window-link"><a href="windows/city.html" class="window-link">Выбрать другой</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-phone"><a href="tel:+78412980900">+7 (8412) 98-09-00</a></div>
+                        <div class="header-callback"><a href="windows/callback.html" class="window-link">Заказать звонок</a></div>
+                        <div class="header-contacts-mobile">
+                            <div class="header-contacts-mobile-phone"><a href="tel:+78412980900" class="btn-red">+7 (8412) 98-09-00</a></div>
+                            <div class="header-contacts-mobile-callback"><a href="windows/callback.html" class="window-link">Заказать звонок</a></div>
+                            <div class="header-contacts-mobile-email"><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="mobile-menu-link"></a>
+                </div>
+            </div>
+            <!-- header END -->
+
+            <!-- nav -->
+            <div class="nav">
+                <div class="container">
+                    <ul>
+                        <li class="with-submenu">
+                            <a href="#">Весь каталог</a>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-tanks.html">Емкости пластиковые</a></li>
+                                        <li><a href="catalogue-tanks.html">Емкости нержавеющие</a></li>
+                                    </ul>
+                                    <a href="catalogue-tanks.html">Емкости</a>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-cassettes.html#descr">Описание</a></li>
+                                        <li><a href="catalogue-cassettes.html#popular">Популярные конфигурации</a></li>
+                                        <li><a href="catalogue-cassettes.html#video">Видеообзор</a></li>
+                                        <li><a href="catalogue-cassettes.html#make">Создать свою конфигурацию</a></li>
+                                    </ul>
+                                    <a href="catalogue-cassettes.html">Кассеты для перевозки жидкостей</a>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-parts.html">Фильтры</a></li>
+                                        <li><a href="catalogue-parts.html">Крышки</a></li>
+                                        <li><a href="catalogue-parts.html">Фиттинги</a></li>
+                                        <li><a href="catalogue-parts.html">Шланги и рукава</a></li>
+                                        <li><a href="catalogue-parts.html">Хомуты</a></li>
+                                        <li><a href="catalogue-parts.html">Прочее</a></li>
+                                    </ul>
+                                    <a href="catalogue-parts.html">Комплектующие к&nbsp;емкостям</a>
+                                </li>
+                                <li><a href="#">Мотопомпы и насосы</a></li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Стационарные растворные узлы</a></li>
+                                        <li><a href="#">Мобильные растворные узлы</a></li>
+                                    </ul>
+                                    <a href="#">Растворные узлы</a>
+                                </li>
+                                <li><a href="#">Изделия из полимеров на&nbsp;заказ</a></li>
+                                <li><a href="#">Прочая продукция</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="catalogue-tanks.html">Емкости</a></li>
+                        <li class="active"><a href="catalogue-cassettes.html">Кассеты для перевозки</a></li>
+                        <li><a href="catalogue-parts.html">Комплектующие</a></li>
+                        <li><a href="#">Мотопомпы</a></li>
+                        <li><a href="#">Растворные узлы</a></li>
+                        <li><a href="#">Изделия из полимеров на заказ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- nav END -->
+
+            <div class="content-header">
+                <div class="container">
+                    <h1>Кассеты для перевозки жидкостей</h1>
+                </div>
+            </div>
+
+            <!-- content menu -->
+            <div class="content-menu">
+                <div class="container">
+                    <div class="content-menu-inner">
+                        <div class="content-menu-page">
+                            <div class="content-menu-page-ul">
+                                <div class="content-menu-page-li active"><a href="#descr">Описание</a></div>
+                                <div class="content-menu-page-li"><a href="#popular">Популярные конфигурации</a></div>
+                                <div class="content-menu-page-li"><a href="#video">Видеообзор</a></div>
+                                <div class="content-menu-page-li"><a href="#make">Создать свою конфигурацию</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content menu END -->
+
+            <!-- catalogue descr -->
+            <div class="catalogue-descr" id="descr">
+                <div class="container">
+                    <h2>Производим кассеты любых конфигураций</h2>
+                    <div class="catalogue-descr-text">Оборудование предназначено для перевозки воды, жидких минеральных удобрений, рабочих растворов и других жидкостей в кузове любого грузового автомобиля соответствующей грузоподъемности. Кассета представляет собой полиэтиленовые емкости в металлическом каркасе, оборудованные системой слива жидкости.</div>
+                    <div class="catalogue-descr-img">
+                        <div class="catalogue-descr-img-inner">
+                            <img src="files/catalogue-cassettes-descr.jpg" alt="" data-width="659" data-height="475" />
+                            <div class="catalogue-descr-img-hint catalogue-descr-img-hint-left" data-left="122" data-top="110">
+                                <div class="catalogue-descr-img-hint-icon"></div>
+                                <div class="catalogue-descr-img-hint-line" style="left:-150px; top:-62px" data-width="142" data-height="59"></div>
+                                <div class="catalogue-descr-img-hint-text" style="left:-344px; top:-87px">Специальные проушины<br /> для подъема емкостей</div>
+                            </div>
+                            <div class="catalogue-descr-img-hint catalogue-descr-img-hint-left" data-left="94" data-top="155">
+                                <div class="catalogue-descr-img-hint-icon"></div>
+                                <div class="catalogue-descr-img-hint-line inverse" style="left:-125px; top:1px" data-width="117" data-height="15"></div>
+                                <div class="catalogue-descr-img-hint-text" style="left:-313px; top:-25px">Усиленные химостойкие<br /> емкости из пищевого<br /> полиэтилена</div>
+                            </div>
+                            <div class="catalogue-descr-img-hint catalogue-descr-img-hint-left" data-left="32" data-top="283">
+                                <div class="catalogue-descr-img-hint-icon"></div>
+                                <div class="catalogue-descr-img-hint-line" style="left:-63px; top:0px" data-width="57" data-height="0"></div>
+                                <div class="catalogue-descr-img-hint-text" style="left:-254px; top:-19px">Усиленный каркас из<br /> проф. трубы (60x60 мм)</div>
+                            </div>
+                            <div class="catalogue-descr-img-hint catalogue-descr-img-hint-left" data-left="60" data-top="332">
+                                <div class="catalogue-descr-img-hint-icon"></div>
+                                <div class="catalogue-descr-img-hint-line inverse" style="left:-107px; top:0" data-width="99" data-height="42"></div>
+                                <div class="catalogue-descr-img-hint-text" style="left:-283px; top:40px">Современная краска<br /> надолго защищает<br /> каркас от коррозии</div>
+                            </div>
+                            <div class="catalogue-descr-img-hint" data-left="370" data-top="370">
+                                <div class="catalogue-descr-img-hint-icon"></div>
+                                <div class="catalogue-descr-img-hint-line" style="left:7px; top:4px" data-width="122" data-height="49"></div>
+                                <div class="catalogue-descr-img-hint-text" style="left:53px; top:48px">Металлическое основание</div>
+                            </div>
+                            <div class="catalogue-descr-img-hint" data-left="439" data-top="334">
+                                <div class="catalogue-descr-img-hint-icon"></div>
+                                <div class="catalogue-descr-img-hint-line" style="left:7px; top:4px" data-width="244" data-height="46"></div>
+                                <div class="catalogue-descr-img-hint-text" style="left:265px; top:37px">Два химостойких крана<br /> закреплены на каркасе<br /> (Италия, диаметр 2’’)</div>
+                            </div>
+                            <div class="catalogue-descr-img-hint" data-left="460" data-top="292">
+                                <div class="catalogue-descr-img-hint-icon"></div>
+                                <div class="catalogue-descr-img-hint-line inverse" style="left:7px; top:-16px" data-width="225" data-height="16"></div>
+                                <div class="catalogue-descr-img-hint-text" style="left:245px; top:-54px">Все соединения<br /> проверяются на<br /> герметичность</div>
+                            </div>
+                            <div class="catalogue-descr-img-hint catalogue-descr-img-hint-right" data-left="568" data-top="234">
+                                <div class="catalogue-descr-img-hint-icon"></div>
+                                <div class="catalogue-descr-img-hint-line inverse" style="left:-5px; top:-60px" data-width="125" data-height="56"></div>
+                                <div class="catalogue-descr-img-hint-text" style="left:137px; top:-78px">Четыре стяжных кольца</div>
+                            </div>
+                            <div class="catalogue-descr-img-hint catalogue-descr-img-hint-right" data-left="580" data-top="139">
+                                <div class="catalogue-descr-img-hint-icon"></div>
+                                <div class="catalogue-descr-img-hint-line" style="left:7px; top:0" data-width="115" data-height="35"></div>
+                                <div class="catalogue-descr-img-hint-text invisible" style="left:137px; top:-78px">Четыре стяжных кольца</div>
+                            </div>
+                            <div class="catalogue-descr-img-hint" data-left="484" data-top="8">
+                                <div class="catalogue-descr-img-hint-icon"></div>
+                                <div class="catalogue-descr-img-hint-line" style="left:8px; top:0" data-width="204" data-height="28"></div>
+                                <div class="catalogue-descr-img-hint-text" style="left:222px; top:14px">Крышки с дыхательным<br /> клапаном<br /> (диаметр 450 мм)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- catalogue descr END -->
+
+            <!-- catalogue -->
+            <div class="catalogue catalogue-popular" id="popular">
+                <div class="container">
+                    <h2>Популярные конфигурации</h2>
+
+                    <!-- catalogue container -->
+                    <div class="catalogue-container">
+                        <div class="catalogue-container-inner">
+
+                            <!-- catalogue list -->
+                            <div class="catalogue-list">
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-cassettes-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-09.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кассета «Стандарт»,<br /> 2 емкости по 4500 л,<br /> дл. 4100, ш. 2080</div>
+                                        <div class="catalogue-item-status">На заказ</div>
+                                        <div class="catalogue-item-price">от 170 000 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-cassettes-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-09.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кассета «Стандарт»,<br /> 2 емкости по 4500 л,<br /> дл. 4100, ш. 2080</div>
+                                        <div class="catalogue-item-status">На заказ</div>
+                                        <div class="catalogue-item-price">от 170 000 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-cassettes-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-09.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кассета «Стандарт»,<br /> 2 емкости по 4500 л,<br /> дл. 4100, ш. 2080</div>
+                                        <div class="catalogue-item-status">На заказ</div>
+                                        <div class="catalogue-item-price">от 170 000 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-cassettes-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-09.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кассета «Стандарт»,<br /> 2 емкости по 4500 л,<br /> дл. 4100, ш. 2080</div>
+                                        <div class="catalogue-item-status">На заказ</div>
+                                        <div class="catalogue-item-price">от 170 000 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-cassettes-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-09.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кассета «Стандарт»,<br /> 2 емкости по 4500 л,<br /> дл. 4100, ш. 2080</div>
+                                        <div class="catalogue-item-status">На заказ</div>
+                                        <div class="catalogue-item-price">от 170 000 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-cassettes-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-09.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кассета «Стандарт»,<br /> 2 емкости по 4500 л,<br /> дл. 4100, ш. 2080</div>
+                                        <div class="catalogue-item-status">На заказ</div>
+                                        <div class="catalogue-item-price">от 170 000 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-cassettes-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-09.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кассета «Стандарт»,<br /> 2 емкости по 4500 л,<br /> дл. 4100, ш. 2080</div>
+                                        <div class="catalogue-item-status">На заказ</div>
+                                        <div class="catalogue-item-price">от 170 000 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-cassettes-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-09.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кассета «Стандарт»,<br /> 2 емкости по 4500 л,<br /> дл. 4100, ш. 2080</div>
+                                        <div class="catalogue-item-status">На заказ</div>
+                                        <div class="catalogue-item-price">от 170 000 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                            </div>
+                            <!-- catalogue list END -->
+
+                        </div>
+                    </div>
+                    <!-- catalogue container END -->
+
+                </div>
+            </div>
+            <!-- catalogue END -->
+
+            <!-- catalogue video -->
+            <div class="catalogue-video" id="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/393P-Rfties?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- catalogue video END -->
+
+            <!-- config -->
+            <div class="config" id="make">
+                <div class="container">
+                    <h2>Создайте свою конфигурацию в 4 шага!</h2>
+                </div>
+
+                <!-- config steps -->
+                <div class="config-steps">
+                    <div class="container">
+                        <div class="config-step active">
+                            <div class="config-step-number">I.</div>
+                            <div class="config-step-title">Емкости</div>
+                        </div>
+                        <div class="config-step">
+                            <div class="config-step-number">II.</div>
+                            <div class="config-step-title">Краны</div>
+                        </div>
+                        <div class="config-step">
+                            <div class="config-step-number">III.</div>
+                            <div class="config-step-title">Каркас</div>
+                        </div>
+                        <div class="config-step">
+                            <div class="config-step-number">IV.</div>
+                            <div class="config-step-title">Доп. опции</div>
+                        </div>
+                        <div class="config-step config-step-finish">
+                            <div class="config-step-title">Готово!</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- config steps END -->
+
+                <!-- config form -->
+                <div class="config-form">
+                    <div class="container">
+                        <form action="windows/success.html" method="post" class="ajax-form">
+
+                            <!-- config form step -->
+                            <div class="config-form-step active">
+                                <div class="config-form-row">
+                                    <div class="config-form-block">
+                                        <div class="config-form-block-header" data-unit=" емкости">
+                                            <h3>Количество емкостей в&nbsp;кассете</h3>
+                                        </div>
+                                        <div class="config-form-block-row">
+                                            <div class="config-form-radio"><label><input type="radio" name="tanks_count" value="1" checked="checked" /><span><img src="images/config-tank.svg" alt="" /></span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="tanks_count" value="2" /><span><img src="images/config-tank.svg" alt="" /><img src="images/config-tank.svg" alt="" /></span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="tanks_count" value="3" /><span><img src="images/config-tank.svg" alt="" /><img src="images/config-tank.svg" alt="" /><img src="images/config-tank.svg" alt="" /></span></label></div>
+                                            <div class="config-form-other">
+                                                <div class="config-form-other-title">Нужно больше?<br /> Укажите ваше значение</div>
+                                                <div class="config-form-other-input">
+                                                    <div class="form-input"><input type="text" name="tanks_count_other" value="" placeholder="000" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="config-form-row">
+                                    <div class="config-form-block">
+                                        <div class="config-form-block-header" data-unit=" л">
+                                            <h3>Объем одной емкости&nbsp;(л)</h3>
+                                        </div>
+                                        <div class="config-form-block-row">
+                                            <div class="config-form-slider">
+                                                <div class="config-form-slider-item"><label><input type="radio" name="tanks_volume" value="1" checked="checked" /><span><em>4500</em></span></label></div>
+                                                <div class="config-form-slider-item"><label><input type="radio" name="tanks_volume" value="2" /><span><em>5000</em></span></label></div>
+                                                <div class="config-form-slider-item"><label><input type="radio" name="tanks_volume" value="3" /><span><em>5500</em></span></label></div>
+                                                <div class="config-form-slider-item"><label><input type="radio" name="tanks_volume" value="4" /><span><em>6000</em></span></label></div>
+                                            </div>
+                                            <div class="config-form-other">
+                                                <div class="config-form-other-title">Нужен другой объем?<br /> Укажите ваше значение</div>
+                                                <div class="config-form-other-input">
+                                                    <div class="form-input"><input type="text" name="tanks_volume_other" value="" placeholder="000" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="config-form-row">
+                                    <div class="config-form-block">
+                                        <div class="config-form-block-header">
+                                            <h3>Назначение</h3>
+                                        </div>
+                                        <div class="config-form-block-row">
+                                            <div class="config-form-radio"><label><input type="radio" name="tanks_type" value="1" checked="checked" /><span>Вода</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="tanks_type" value="2" /><span>Дизельное<br /> топливо</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="tanks_type" value="3" /><span>КАС</span></label></div>
+                                            <div class="config-form-other">
+                                                <div class="config-form-other-input config-form-other-input-2">
+                                                    <div class="form-input"><input type="text" name="tanks_typeother" value="" placeholder="Другое назначение" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="config-form-next-btn"><a href="#">Следующий шаг (2/4)</a></div>
+                            </div>
+                            <!-- config form step END -->
+
+                            <!-- config form step -->
+                            <div class="config-form-step">
+                                <div class="config-form-row">
+                                    <div class="config-form-block">
+                                        <div class="config-form-block-header" data-unit=" крана">
+                                            <h3>Количество кранов</h3>
+                                            <div class="config-form-block-hint">
+                                                <div class="config-form-block-hint-label"><span>Помощь в выборе</span></div>
+                                                <div class="config-form-block-hint-text">Диаметра 2’ достаточно для напора воды в размере 12000 атмосферных единиц.<br /> Диаметр 3’ требуется, когда ожидаемое давление еще больше.</div>
+                                            </div>
+                                        </div>
+                                        <div class="config-form-block-row">
+                                            <div class="config-form-radio"><label><input type="radio" name="valve_count" value="1" checked="checked" /><span><img src="images/config-valve.svg" alt="" /></span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="valve_count" value="2" /><span><img src="images/config-valve.svg" alt="" /><img src="images/config-valve.svg" alt="" /></span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="valve_count" value="3" /><span><img src="images/config-valve.svg" alt="" /><img src="images/config-valve.svg" alt="" /><img src="images/config-valve.svg" alt="" /></span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="valve_count" value="0" /><span>Нет</span></label></div>
+                                            <div class="config-form-other">
+                                                <div class="config-form-other-title">Нужно больше?<br /> Укажите ваше значение</div>
+                                                <div class="config-form-other-input config-form-other-input-3">
+                                                    <div class="form-input"><input type="text" name="valve_count_other" value="" placeholder="000" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="config-form-row">
+                                    <div class="config-form-block">
+                                        <div class="config-form-block-header">
+                                            <h3>Диаметр проходного сечения</h3>
+                                            <div class="config-form-block-hint">
+                                                <div class="config-form-block-hint-label"><span>Помощь в выборе</span></div>
+                                                <div class="config-form-block-hint-text">Диаметра 2’ достаточно для напора воды в размере 12000 атмосферных единиц.<br /> Диаметр 3’ требуется, когда ожидаемое давление еще больше.</div>
+                                            </div>
+                                        </div>
+                                        <div class="config-form-block-row">
+                                            <div class="config-form-radio config-form-radio-2"><label><input type="radio" name="valve_diameter" value="1" checked="checked" /><span>2’’</span></label></div>
+                                            <div class="config-form-radio config-form-radio-2"><label><input type="radio" name="valve_diameter" value="2" /><span>3’’</span></label></div>
+                                            <div class="config-form-other">
+                                                <div class="config-form-other-title">Другой размер</div>
+                                                <div class="config-form-other-input">
+                                                    <div class="form-input"><input type="text" name="valve_diameter_other" value="" placeholder="000" /></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="config-form-row">
+                                    <div class="config-form-col">
+                                        <div class="config-form-block">
+                                            <div class="config-form-block-header">
+                                                <h3>Диаметр проходного сечения</h3>
+                                                <div class="config-form-block-hint">
+                                                    <div class="config-form-block-hint-label"><span>Какой удобнее?</span></div>
+                                                <div class="config-form-block-hint-text">Диаметра 2’ достаточно для напора воды в размере 12000 атмосферных единиц.<br /> Диаметр 3’ требуется, когда ожидаемое давление еще больше.</div>
+                                                </div>
+                                            </div>
+                                            <div class="config-form-block-row">
+                                                <div class="config-form-radio"><label><input type="radio" name="valve_position" value="1" checked="checked" /><span>Боковое</span></label></div>
+                                                <div class="config-form-radio"><label><input type="radio" name="valve_position" value="2" /><span>Торцевое</span></label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="config-form-col">
+                                        <div class="config-form-block">
+                                            <div class="config-form-block-header">
+                                                <h3>Врезка адаптера резервуара</h3>
+                                                <div class="config-form-block-hint">
+                                                    <div class="config-form-block-hint-label"><span>Что это?</span></div>
+                                                <div class="config-form-block-hint-text">Диаметра 2’ достаточно для напора воды в размере 12000 атмосферных единиц.<br /> Диаметр 3’ требуется, когда ожидаемое давление еще больше.</div>
+                                                </div>
+                                            </div>
+                                            <div class="config-form-block-row">
+                                                <div class="config-form-radio"><label><input type="radio" name="valve_adapter" value="1" checked="checked" /><span>Боковая</span></label></div>
+                                                <div class="config-form-radio"><label><input type="radio" name="valve_adapter" value="2" /><span>Нижняя</span></label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="config-form-next-btn"><a href="#">Следующий шаг (3/4)</a></div>
+                            </div>
+                            <!-- config form step END -->
+
+                            <!-- config form step -->
+                            <div class="config-form-step">
+                                <div class="config-form-row">
+                                    <div class="config-form-block">
+                                        <div class="config-form-block-header">
+                                            <h3>Дно каркаса</h3>
+                                            <div class="config-form-block-hint">
+                                                <div class="config-form-block-hint-label"><span>Помощь в выборе</span></div>
+                                                <div class="config-form-block-hint-text">Диаметра 2’ достаточно для напора воды в размере 12000 атмосферных единиц.<br /> Диаметр 3’ требуется, когда ожидаемое давление еще больше.</div>
+                                            </div>
+                                        </div>
+                                        <div class="config-form-block-row">
+                                            <div class="config-form-radio"><label><input type="radio" name="frame_bottom" value="1" checked="checked" /><span>Профильная<br /> труба</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="frame_bottom" value="2" /><span>Дерево</span></label></div>
+                                            <div class="config-form-radio config-form-radio-3"><label><input type="radio" name="frame_bottom" value="3" /><span>Металлический<br /> лист</span></label></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="config-form-row">
+                                    <div class="config-form-block">
+                                        <div class="config-form-block-header">
+                                            <h3>Опции перемещения по кассете</h3>
+                                            <div class="config-form-block-hint">
+                                                <div class="config-form-block-hint-label"><span>Помощь в выборе</span></div>
+                                                <div class="config-form-block-hint-text">Диаметра 2’ достаточно для напора воды в размере 12000 атмосферных единиц.<br /> Диаметр 3’ требуется, когда ожидаемое давление еще больше.</div>
+                                            </div>
+                                        </div>
+                                        <div class="config-form-block-row">
+                                            <div class="config-form-radio"><label><input type="radio" name="frame_option" value="1" checked="checked" /><span>Трап</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="frame_option" value="2" /><span>Площадки</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="frame_option" value="0" /><span>Нет</span></label></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="config-form-row">
+                                    <div class="config-form-block">
+                                        <div class="config-form-block-header">
+                                            <h3>Лестница</h3>
+                                            <div class="config-form-block-hint">
+                                                <div class="config-form-block-hint-label"><span>Помощь в выборе</span></div>
+                                                <div class="config-form-block-hint-text">Диаметра 2’ достаточно для напора воды в размере 12000 атмосферных единиц.<br /> Диаметр 3’ требуется, когда ожидаемое давление еще больше.</div>
+                                            </div>
+                                        </div>
+                                        <div class="config-form-block-row">
+                                            <div class="config-form-radio"><label><input type="radio" name="frame_stairs" value="1" checked="checked" /><span>Боковая</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="frame_stairs" value="2" /><span>Торцевая</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="frame_stairs" value="0" /><span>Нет</span></label></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="config-form-next-btn"><a href="#">Следующий шаг (4/4)</a></div>
+                            </div>
+                            <!-- config form step END -->
+
+                            <!-- config form step -->
+                            <div class="config-form-step">
+                                <div class="config-form-row">
+                                    <div class="config-form-block">
+                                        <div class="config-form-block-header">
+                                            <h3>Уровнемер</h3>
+                                            <div class="config-form-block-hint">
+                                                <div class="config-form-block-hint-label"><span>Помощь в выборе</span></div>
+                                                <div class="config-form-block-hint-text">Диаметра 2’ достаточно для напора воды в размере 12000 атмосферных единиц.<br /> Диаметр 3’ требуется, когда ожидаемое давление еще больше.</div>
+                                            </div>
+                                        </div>
+                                        <div class="config-form-block-row">
+                                            <div class="config-form-radio"><label><input type="radio" name="level_meter" value="1" checked="checked" /><span>Установлен</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="level_meter" value="2" /><span>Нет</span></label></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="config-form-row">
+                                    <div class="config-form-block">
+                                        <div class="config-form-block-header">
+                                            <h3>Площадка под мотопомпу</h3>
+                                            <div class="config-form-block-hint">
+                                                <div class="config-form-block-hint-label"><span>Помощь в выборе</span></div>
+                                                <div class="config-form-block-hint-text">Диаметра 2’ достаточно для напора воды в размере 12000 атмосферных единиц.<br /> Диаметр 3’ требуется, когда ожидаемое давление еще больше.</div>
+                                            </div>
+                                        </div>
+                                        <div class="config-form-block-row">
+                                            <div class="config-form-radio"><label><input type="radio" name="pomp_area" value="1" checked="checked" /><span>Продольная<br /> (слева)</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="pomp_area" value="2" /><span>Продольная<br /> (справа)</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="pomp_area" value="3" /><span>Боковая<br /> (слева)</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="pomp_area" value="4" /><span>Боковая<br /> (справа)</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="pomp_area" value="0" /><span>Нет</span></label></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="config-form-row">
+                                    <div class="config-form-block">
+                                        <div class="config-form-block-header">
+                                            <h3>Мотопомпа</h3>
+                                            <div class="config-form-block-hint">
+                                                <div class="config-form-block-hint-label"><span>Помощь в выборе</span></div>
+                                                <div class="config-form-block-hint-text">Диаметра 2’ достаточно для напора воды в размере 12000 атмосферных единиц.<br /> Диаметр 3’ требуется, когда ожидаемое давление еще больше.</div>
+                                            </div>
+                                        </div>
+                                        <div class="config-form-block-row">
+                                            <div class="config-form-radio"><label><input type="radio" name="pomp" value="1" checked="checked" /><span>Химо-<br /> стойкая</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="pomp" value="2" /><span>Робин-<br /> субару</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="pomp" value="3" /><span>Другая</span></label></div>
+                                            <div class="config-form-radio"><label><input type="radio" name="pomp" value="0" /><span>Нет</span></label></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="config-form-order-btn"><a href="#" class="btn-blue">Перейти к заказу</a></div>
+                            </div>
+                            <!-- config form step END -->
+
+                            <!-- config form step -->
+                            <div class="config-form-step">
+                                <div class="config-form-row">
+                                    <div class="config-form-block">
+                                        <div class="config-form-block-header">
+                                            <h3>Ваша конфигурация готова!</h3>
+                                        </div>
+                                        <div class="order-form-final-text">Отправьте заявку и получите ответы на все вопросы.<br /> Если у вас есть особые пожелания к опциям кассеты, не стесняйтесь о них рассказать!</div>
+                                        <div class="order-form-final-content">
+                                            <div class="order-form-final-info">
+                                            </div>
+                                            <div class="order-form-final-personal">
+                                                <div class="form-input"><span>Имя</span><input type="text" name="name" value="" /></div>
+                                                <div class="form-input"><span>Компания</span><input type="text" name="name" value="" /></div>
+                                                <div class="form-input"><span>E-mail</span><input type="text" name="name" value="" class="email" /></div>
+                                                <div class="form-input"><span>Телефон</span><input type="text" name="phone" value="" class="required phoneRU" /></div>
+                                                <div class="form-input"><span>Ваше сообщение</span><textarea name="message" rows="5" cols="10"></textarea></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="config-form-order-submit">
+                                    <input type="submit" value="Отправить заявку" class="btn-blue" />
+                                    <div class="config-form-order-policy">Нажимая на кнопку, вы даете <a href="policy.html">согласие</a> на обработку персональных данных и принимаете политику конфиденциальности</div>
+                                </div>
+                            </div>
+                            <!-- config form step END -->
+
+                        </form>
+                    </div>
+                </div>
+                <!-- config form END -->
+
+            </div>
+            <!-- config END -->
+
+            <div class="footer-callback footer-callback-white">
+                <div class="footer-callback-title">Узнайте больше по&nbsp;телефону</div>
+                <a href="tel:+78412980900" class="footer-callback-phone">+7 (8412) 98-09-00</a>
+                <div class="footer-callback-link"><a href="windows/callback.html" class="window-link"><span>Заказать обратный звонок</span></a></div>
+                <div class="footer-contacts-link"><a href="contacts.html#feedback-form">Форма обратной связи</a></div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon"></div>
+                        <div class="footer-logo-title">АгроСтройТорг</div>
+                    </div>
+
+                    <div class="footer-contacts footer-contacts-mobile">
+                        <div class="footer-contacts-address">440061, г. Пенза, ул. Насосная 3к2, оф.21</div>
+                        <div class="footer-contacts-links">
+                            <p><a href="tel:+78412980900">+7 (8412) 98-09-00</a></p>
+                            <p><a href="tel:+78412980500">+7 (8412) 98-05-00</a></p>
+                            <p><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></p>
+                        </div>
+                        <div class="footer-contacts-schedule">Режим работы: пн-пт 9:00-18:00</div>
+                        <div class="footer-contacts-delivery">Доставка из г. Пензы: от 1 дня</div>
+                    </div>
+
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="services.html">Услуги</a></li>
+                            <li><a href="delivery.html">Доставка</a></li>
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-address">440061, г. Пенза, ул. Насосная 3к2, оф.21</div>
+                        <div class="footer-contacts-links">
+                            <p><a href="tel:+78412980900">+7 (8412) 98-09-00</a></p>
+                            <p><a href="tel:+78412980500">+7 (8412) 98-05-00</a></p>
+                            <p><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></p>
+                        </div>
+                        <div class="footer-contacts-schedule">Режим работы: пн-пт 9:00-18:00</div>
+                        <div class="footer-contacts-delivery">Доставка из г. Пензы: от 1 дня</div>
+                    </div>
+
+                    <div class="footer-copyrights">© ООО «АСТ», 2018</div>
+                    <div class="footer-policy"><a href="policy.html">Пользовательское соглашение</a></div>
+                    <div class="footer-developer"><a href="http://7pap.ru" target="_blank">Дизайн и разработка: <img src="images/7pap.svg" alt="" /></a></div>
+                </div>
+            </div>
+            <!-- footer END -->
+
+            <div class="cookie-window">
+                <div class="cookie-window-text">Чтобы вам было удобнее пользоваться сайтом, мы используем cookies для сбора технической информации, такой как IP-адрес вашего местоположения.<br /> Продолжая использовать наш сайт, вы соглашаетесь с использованием файлов cookies.</div>
+                <div class="cookie-window-btn"><a href="#">Согласен</a></div>
+                <div class="cookie-window-link"><a href="policy.html">Подробнее</a></div>
+            </div>
+
+        </div>
+        <!-- wrapper END -->
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/nouislider/nouislider.min.js"></script>
+        <script src="js/nouislider/wNumb.js"></script>
+        <script src="js/cookie/jquery.cookie.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>АСТ</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="js/nouislider/nouislider.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.css" />
+        <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- header -->
+            <div class="header">
+                <div class="container">
+                    <div class="header-logo">
+                        <div class="logo"><a href="index.html"></a></div>
+                        <div class="logo-title">АгроСтройТорг</div>
+                    </div>
+
+                    <div class="header-content">
+                        <div class="header-mobile-menu">
+                            <a href="#" class="header-mobile-menu-link">Каталог<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 11.0526H3.4L10.2 18.2105C10.6 18.6316 10.6 19.2632 10.2 19.6842C10 19.8947 9.7 20 9.5 20C9.3 20 9 19.8947 8.8 19.6842L0.299999 10.7368C-0.1 10.3158 -0.1 9.68421 0.299999 9.26316L8.8 0.315789C9.2 -0.105263 9.8 -0.105263 10.2 0.315789C10.6 0.736842 10.6 1.36842 10.2 1.78947L3.4 8.94737H23C23.6 8.94737 24 9.36842 24 10C24 10.6316 23.6 11.0526 23 11.0526Z" /></svg></a>
+                            <a href="#" class="header-mobile-menu-back"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 11.0526H3.4L10.2 18.2105C10.6 18.6316 10.6 19.2632 10.2 19.6842C10 19.8947 9.7 20 9.5 20C9.3 20 9 19.8947 8.8 19.6842L0.299999 10.7368C-0.1 10.3158 -0.1 9.68421 0.299999 9.26316L8.8 0.315789C9.2 -0.105263 9.8 -0.105263 10.2 0.315789C10.6 0.736842 10.6 1.36842 10.2 1.78947L3.4 8.94737H23C23.6 8.94737 24 9.36842 24 10C24 10.6316 23.6 11.0526 23 11.0526Z" /></svg>Назад</a>
+                            <div class="header-mobile-menu-content">
+                                <ul>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-tanks.html">Емкости</a>
+                                        <ul>
+                                            <li><a href="catalogue-tanks.html">Емкости пластиковые</a></li>
+                                            <li><a href="catalogue-tanks.html">Емкости нержавеющие</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-cassettes.html">Кассеты для перевозки жидкостей</a>
+                                        <ul>
+                                            <li><a href="catalogue-cassettes.html#descr">Описание</a></li>
+                                            <li><a href="catalogue-cassettes.html#popular">Популярные конфигурации</a></li>
+                                            <li><a href="catalogue-cassettes.html#video">Видеообзор</a></li>
+                                            <li><a href="catalogue-cassettes.html#make">Создать свою конфигурацию</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-parts.html">Комплектующие к&nbsp;емкостям</a>
+                                        <ul>
+                                            <li><a href="catalogue-parts.html">Фильтры</a></li>
+                                            <li><a href="catalogue-parts.html">Крышки</a></li>
+                                            <li><a href="catalogue-parts.html">Фиттинги</a></li>
+                                            <li><a href="catalogue-parts.html">Шланги и рукава</a></li>
+                                            <li><a href="catalogue-parts.html">Хомуты</a></li>
+                                            <li><a href="catalogue-parts.html">Прочее</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Мотопомпы и насосы</a></li>
+                                    <li class="with-submenu">
+                                        <a href="#">Растворные узлы</a>
+                                        <ul>
+                                            <li><a href="#">Стационарные растворные узлы</a></li>
+                                            <li><a href="#">Мобильные растворные узлы</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Изделия из полимеров на&nbsp;заказ</a></li>
+                                    <li><a href="#">Прочая продукция</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header-menu">
+                            <ul>
+                                <li><a href="services.html">Услуги</a></li>
+                                <li><a href="delivery.html">Доставка</a></li>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-search">
+                            <form action="search.html" method="post">
+                                <div class="header-search-input"><input type="text" name="search" value="" class="required" placeholder="Поиск по товарам, категориям, артикулу" /></div>
+                                <div class="header-search-submit"><button type="submit"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 8.8H9.36L9.12 8.56C9.92 7.68 10.4 6.48 10.4 5.2C10.4 2.32 8.08 0 5.2 0C2.32 0 0 2.32 0 5.2C0 8.08 2.32 10.4 5.2 10.4C6.48 10.4 7.68 9.92 8.56 9.12L8.8 9.36V10L12.8 14L14 12.8L10 8.8V8.8ZM5.2 8.8C3.2 8.8 1.6 7.2 1.6 5.2C1.6 3.2 3.2 1.6 5.2 1.6C7.2 1.6 8.8 3.2 8.8 5.2C8.8 7.2 7.2 8.8 5.2 8.8V8.8Z" /></svg></button></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="header-location">
+                        <div class="header-city">
+                            <a href="windows/city.html" class="header-city-link window-link">Пенза</a>
+                            <div class="header-city-window">
+                                <div class="header-city-window-text">Ваш город — Пенза?</div>
+                                <div class="header-city-window-ctrl">
+                                    <div class="header-city-window-btn"><a href="#">Да</a></div>
+                                    <div class="header-city-window-link"><a href="windows/city.html" class="window-link">Выбрать другой</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-phone"><a href="tel:+78412980900">+7 (8412) 98-09-00</a></div>
+                        <div class="header-callback"><a href="windows/callback.html" class="window-link">Заказать звонок</a></div>
+                        <div class="header-contacts-mobile">
+                            <div class="header-contacts-mobile-phone"><a href="tel:+78412980900" class="btn-red">+7 (8412) 98-09-00</a></div>
+                            <div class="header-contacts-mobile-callback"><a href="windows/callback.html" class="window-link">Заказать звонок</a></div>
+                            <div class="header-contacts-mobile-email"><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="mobile-menu-link"></a>
+                </div>
+            </div>
+            <!-- header END -->
+
+            <!-- nav -->
+            <div class="nav">
+                <div class="container">
+                    <ul>
+                        <li class="with-submenu">
+                            <a href="#">Весь каталог</a>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-tanks.html">Емкости пластиковые</a></li>
+                                        <li><a href="catalogue-tanks.html">Емкости нержавеющие</a></li>
+                                    </ul>
+                                    <a href="catalogue-tanks.html">Емкости</a>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-cassettes.html#descr">Описание</a></li>
+                                        <li><a href="catalogue-cassettes.html#popular">Популярные конфигурации</a></li>
+                                        <li><a href="catalogue-cassettes.html#video">Видеообзор</a></li>
+                                        <li><a href="catalogue-cassettes.html#make">Создать свою конфигурацию</a></li>
+                                    </ul>
+                                    <a href="catalogue-cassettes.html">Кассеты для перевозки жидкостей</a>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-parts.html">Фильтры</a></li>
+                                        <li><a href="catalogue-parts.html">Крышки</a></li>
+                                        <li><a href="catalogue-parts.html">Фиттинги</a></li>
+                                        <li><a href="catalogue-parts.html">Шланги и рукава</a></li>
+                                        <li><a href="catalogue-parts.html">Хомуты</a></li>
+                                        <li><a href="catalogue-parts.html">Прочее</a></li>
+                                    </ul>
+                                    <a href="catalogue-parts.html">Комплектующие к&nbsp;емкостям</a>
+                                </li>
+                                <li><a href="#">Мотопомпы и насосы</a></li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Стационарные растворные узлы</a></li>
+                                        <li><a href="#">Мобильные растворные узлы</a></li>
+                                    </ul>
+                                    <a href="#">Растворные узлы</a>
+                                </li>
+                                <li><a href="#">Изделия из полимеров на&nbsp;заказ</a></li>
+                                <li><a href="#">Прочая продукция</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="catalogue-tanks.html">Емкости</a></li>
+                        <li><a href="catalogue-cassettes.html">Кассеты для перевозки</a></li>
+                        <li class="active"><a href="catalogue-parts.html">Комплектующие</a></li>
+                        <li><a href="#">Мотопомпы</a></li>
+                        <li><a href="#">Растворные узлы</a></li>
+                        <li><a href="#">Изделия из полимеров на заказ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- nav END -->
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <a href="catalogue-parts.html">Комплектующие</a> &nbsp;/&nbsp; <a href="catalogue-parts.html">Краны</a>
+                </div>
+            </div>
+
+            <!-- catalogue detail -->
+            <div class="catalogue-detail">
+                <div class="container">
+                    <div class="catalogue-detail-container">
+                        <div class="catalogue-detail-content">
+                            <div class="catalogue-detail-photos">
+                                <div class="catalogue-detail-photos-big">
+                                    <div class="catalogue-detail-photos-big-item">
+                                        <a href="files/catalogue-detail-photo-max-3.jpg"><img src="files/catalogue-detail-photo-3.jpg" alt="" /></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalogue-detail-inner">
+                                <h1>Кран шаровой 2-х ходовой</h1>
+                                <div class="catalogue-detail-art">
+                                    <div class="catalogue-detail-art-text">Артикул: 345673</div>
+                                </div>
+                                <div class="catalogue-detail-buy">
+                                    <div class="catalogue-detail-price">
+                                        <div class="catalogue-detail-price-value">245</div>
+                                        <div class="catalogue-detail-price-curr">Ь</div>
+                                    </div>
+                                    <div class="catalogue-detail-notavailable">На заказ</div>
+                                    <div class="catalogue-detail-order"><a href="windows/order.html" class="window-link">Заказать</a></div>
+                                </div>
+                                <div class="catalogue-detail-delivery">
+                                    <div class="catalogue-detail-delivery-city"><a href="windows/city.html" class="window-link">Ваш регион: <span>Пенза</span></a></div>
+                                    <div class="catalogue-detail-delivery-text">Доставим надежно и быстро</div>
+                                    <div class="catalogue-detail-delivery-link"><a href="delivery.html">Подробнее о доставке</a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalogue-detail-menu">
+                            <ul>
+                                <li><a href="#">Характеристики</a></li>
+                                <li class="active"><a href="#">Описание</a></li>
+                                <li><a href="#">Варианты по артикулам</a></li>
+                            </ul>
+                            <div class="catalogue-detail-menu-active"></div>
+                        </div>
+
+                        <div class="catalogue-detail-info">
+                            <div class="catalogue-detail-info-tab">
+                                <div class="catalogue-detail-info-header">Характеристики</div>
+                                <div class="catalogue-detail-info-content">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="catalogue-detail-info-title">Назначение</td>
+                                                <td>вода, КАС, ГСМ</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="catalogue-detail-info-title">Объем</td>
+                                                <td>5000 л</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="catalogue-detail-info-title">Диаметр</td>
+                                                <td>500 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="catalogue-detail-info-title">Высота</td>
+                                                <td>1200 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="catalogue-detail-info-title">Диаметр горловины</td>
+                                                <td>20 мм</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="catalogue-detail-info-title">Температура эксплуатации</td>
+                                                <td>от -30 до +60 ºС</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="catalogue-detail-info-title">Крышка</td>
+                                                <td>Резьбовая с дыхательным клапаном</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="catalogue-detail-info-title">Материал</td>
+                                                <td>полиэтилен</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="catalogue-detail-info-title">Тип эксплуатации</td>
+                                                <td>Нет</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="catalogue-detail-info-title">Положение</td>
+                                                <td>Вертикальная/ горизонтальная</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="catalogue-detail-info-title">Форма</td>
+                                                <td>Цилиндрическая</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="catalogue-detail-info-title">Тип емкости</td>
+                                                <td>Стандарт</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="catalogue-detail-info-tab active">
+                                <div class="catalogue-detail-info-header">Описание</div>
+                                <div class="catalogue-detail-info-content">
+                                    <p>2-х ходовой кран высокого давления аналогично 3-х ходовому производится в двух исполнениях - под фитинги BSP<br /> и под фитинги DKOL<br /> Для исполнения под фитинги BSP рекомендуется применять уплотнения.<br /> Кран может перекрывать поток на полном рабочем давлении.<br /> Корпус гидрораспределителя изготавливается из высокопрочной стали с антикорозийным покрытием.<br /> Внутренние части крана изготовлены из хромистых сталей.<br /> 2-х ходовой кран полностью герметичен и не допускает утечек.<br /> При монтаже крана нет разницы с месте подключения напорной магистрали - на порт А или порт Р.<br /> По запросу поставляются краны для гидравлики с фиксатором в крайних положениях.</p>
+                                    <h4>Установочный чертеж 2-х ходового крана под фитинги BSP</h4>
+                                    <p>Подключить A и P  к портам, где поток должен блокироваться. Поток блокируется при повороте рукояти на 90<br /> (позиция 1) и свободен в позиции 2.</p>
+                                    <p><img src="files/catalogue-detail.jpg" alt="" /></p>
+                                </div>
+                            </div>
+
+                            <div class="catalogue-detail-info-tab">
+                                <div class="catalogue-detail-info-header">Варианты по артикулам</div>
+                                <div class="catalogue-detail-info-content">
+                                    <h3>Параметры 2х ходовых кранов высокого давления под фитинги BSP</h3>
+                                    <div class="table-scroll">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Наименование</th>
+                                                    <th>Артикул</th>
+                                                    <th>Резьба</th>
+                                                    <th>Т, мм</th>
+                                                    <th>Т, мм</th>
+                                                    <th>Y, мм</th>
+                                                    <th>Y, мм</th>
+                                                    <th>PN, bar</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Кран</td>
+                                                    <td>4542132</td>
+                                                    <td>1/2</td>
+                                                    <td>87</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>16</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Кран</td>
+                                                    <td>4542134</td>
+                                                    <td>3/4</td>
+                                                    <td>87</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>16</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Кран</td>
+                                                    <td>45511104</td>
+                                                    <td>1</td>
+                                                    <td>99</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>16</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Кран</td>
+                                                    <td>4542135P</td>
+                                                    <td>1 1/4</td>
+                                                    <td>109</td>
+                                                    <td>20</td>
+                                                    <td>25</td>
+                                                    <td>М8</td>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Кран</td>
+                                                    <td>4542136P</td>
+                                                    <td>1 1/2</td>
+                                                    <td>129</td>
+                                                    <td>27</td>
+                                                    <td>34</td>
+                                                    <td>М8</td>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Кран</td>
+                                                    <td>4542137</td>
+                                                    <td>2</td>
+                                                    <td>149</td>
+                                                    <td>43</td>
+                                                    <td>78</td>
+                                                    <td>М8</td>
+                                                    <td>10</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h3>Параметры 2х ходовых кранов высокого давления под фитинги DKOL</h3>
+                                    <div class="table-scroll">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Наименование</th>
+                                                    <th>Артикул</th>
+                                                    <th>Резьба</th>
+                                                    <th>Т, мм</th>
+                                                    <th>Т, мм</th>
+                                                    <th>Y, мм</th>
+                                                    <th>Y, мм</th>
+                                                    <th>PN, bar</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Кран</td>
+                                                    <td>4542132</td>
+                                                    <td>1/2</td>
+                                                    <td>87</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>16</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Кран</td>
+                                                    <td>4542134</td>
+                                                    <td>3/4</td>
+                                                    <td>87</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>16</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Кран</td>
+                                                    <td>45511104</td>
+                                                    <td>1</td>
+                                                    <td>99</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>16</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Кран</td>
+                                                    <td>4542135P</td>
+                                                    <td>1 1/4</td>
+                                                    <td>109</td>
+                                                    <td>20</td>
+                                                    <td>25</td>
+                                                    <td>М8</td>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Кран</td>
+                                                    <td>4542136P</td>
+                                                    <td>1 1/2</td>
+                                                    <td>129</td>
+                                                    <td>27</td>
+                                                    <td>34</td>
+                                                    <td>М8</td>
+                                                    <td>10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Кран</td>
+                                                    <td>4542137</td>
+                                                    <td>2</td>
+                                                    <td>149</td>
+                                                    <td>43</td>
+                                                    <td>78</td>
+                                                    <td>М8</td>
+                                                    <td>10</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- catalogue detail END -->
+
+            <!-- main catalogue list -->
+            <div class="main-catalogue-list">
+                <div class="container">
+                    <div class="main-catalogue-list-title">Комплектующие</div>
+                    <div class="main-catalogue-list-inner">
+                        <div class="main-catalogue-list-content">
+
+                            <div class="main-catalogue-list-item">
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-parts-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-10.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кран шаровой с ниппелем Резьба F BSP: 1 1/4, диам. 30 мм, д. 32 мм</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">300 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-1">Акция</div>
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+                            </div>
+
+                            <div class="main-catalogue-list-item">
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-parts-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-10.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кран шаровой с ниппелем Резьба F BSP: 1 1/4, диам. 30 мм, д. 32 мм</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">300 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-1">Акция</div>
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+                            </div>
+
+                            <div class="main-catalogue-list-item">
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-parts-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-10.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кран шаровой с ниппелем Резьба F BSP: 1 1/4, диам. 30 мм, д. 32 мм</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">300 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+                            </div>
+
+                            <div class="main-catalogue-list-item">
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-parts-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-10.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кран шаровой с ниппелем Резьба F BSP: 1 1/4, диам. 30 мм, д. 32 мм</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">300 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-1">Акция</div>
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+                            </div>
+
+                            <div class="main-catalogue-list-item">
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-parts-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-10.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кран шаровой с ниппелем Резьба F BSP: 1 1/4, диам. 30 мм, д. 32 мм</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">300 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-1">Акция</div>
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+                            </div>
+
+                            <div class="main-catalogue-list-item">
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-parts-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-10.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кран шаровой с ниппелем Резьба F BSP: 1 1/4, диам. 30 мм, д. 32 мм</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">300 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-1">Акция</div>
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+                            </div>
+
+                            <div class="main-catalogue-list-item">
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-parts-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-10.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кран шаровой с ниппелем Резьба F BSP: 1 1/4, диам. 30 мм, д. 32 мм</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">300 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+                            </div>
+
+                            <div class="main-catalogue-list-item">
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-parts-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-10.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кран шаровой с ниппелем Резьба F BSP: 1 1/4, диам. 30 мм, д. 32 мм</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">300 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-1">Акция</div>
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+                            </div>
+
+                            <div class="main-catalogue-list-item">
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-parts-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-10.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кран шаровой с ниппелем Резьба F BSP: 1 1/4, диам. 30 мм, д. 32 мм</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">300 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-1">Акция</div>
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+                            </div>
+
+                            <div class="main-catalogue-list-item">
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-parts-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-10.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кран шаровой с ниппелем Резьба F BSP: 1 1/4, диам. 30 мм, д. 32 мм</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">300 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-1">Акция</div>
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+                            </div>
+
+                            <div class="main-catalogue-list-item">
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-parts-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-10.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кран шаровой с ниппелем Резьба F BSP: 1 1/4, диам. 30 мм, д. 32 мм</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">300 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+                            </div>
+
+                            <div class="main-catalogue-list-item">
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-parts-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-10.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Кран шаровой с ниппелем Резьба F BSP: 1 1/4, диам. 30 мм, д. 32 мм</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">300 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-1">Акция</div>
+                                            <div class="catalogue-item-event catalogue-item-event-2">АСТ</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main catalogue list END -->
+
+            <div class="footer-callback footer-callback-white">
+                <div class="footer-callback-title">Узнайте больше по&nbsp;телефону</div>
+                <a href="tel:+78412980900" class="footer-callback-phone">+7 (8412) 98-09-00</a>
+                <div class="footer-callback-link"><a href="windows/callback.html" class="window-link"><span>Заказать обратный звонок</span></a></div>
+                <div class="footer-contacts-link"><a href="contacts.html#feedback-form">Форма обратной связи</a></div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon"></div>
+                        <div class="footer-logo-title">АгроСтройТорг</div>
+                    </div>
+
+                    <div class="footer-contacts footer-contacts-mobile">
+                        <div class="footer-contacts-address">440061, г. Пенза, ул. Насосная 3к2, оф.21</div>
+                        <div class="footer-contacts-links">
+                            <p><a href="tel:+78412980900">+7 (8412) 98-09-00</a></p>
+                            <p><a href="tel:+78412980500">+7 (8412) 98-05-00</a></p>
+                            <p><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></p>
+                        </div>
+                        <div class="footer-contacts-schedule">Режим работы: пн-пт 9:00-18:00</div>
+                        <div class="footer-contacts-delivery">Доставка из г. Пензы: от 1 дня</div>
+                    </div>
+
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="services.html">Услуги</a></li>
+                            <li><a href="delivery.html">Доставка</a></li>
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-address">440061, г. Пенза, ул. Насосная 3к2, оф.21</div>
+                        <div class="footer-contacts-links">
+                            <p><a href="tel:+78412980900">+7 (8412) 98-09-00</a></p>
+                            <p><a href="tel:+78412980500">+7 (8412) 98-05-00</a></p>
+                            <p><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></p>
+                        </div>
+                        <div class="footer-contacts-schedule">Режим работы: пн-пт 9:00-18:00</div>
+                        <div class="footer-contacts-delivery">Доставка из г. Пензы: от 1 дня</div>
+                    </div>
+
+                    <div class="footer-copyrights">© ООО «АСТ», 2018</div>
+                    <div class="footer-policy"><a href="policy.html">Пользовательское соглашение</a></div>
+                    <div class="footer-developer"><a href="http://7pap.ru" target="_blank">Дизайн и разработка: <img src="images/7pap.svg" alt="" /></a></div>
+                </div>
+            </div>
+            <!-- footer END -->
+
+            <div class="cookie-window">
+                <div class="cookie-window-text">Чтобы вам было удобнее пользоваться сайтом, мы используем cookies для сбора технической информации, такой как IP-адрес вашего местоположения.<br /> Продолжая использовать наш сайт, вы соглашаетесь с использованием файлов cookies.</div>
+                <div class="cookie-window-btn"><a href="#">Согласен</a></div>
+                <div class="cookie-window-link"><a href="policy.html">Подробнее</a></div>
+            </div>
+
+        </div>
+        <!-- wrapper END -->
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/nouislider/nouislider.min.js"></script>
+        <script src="js/nouislider/wNumb.js"></script>
+        <script src="js/cookie/jquery.cookie.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>

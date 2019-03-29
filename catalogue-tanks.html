@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>АСТ</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
+        <link rel="stylesheet" href="js/nouislider/nouislider.css" />
+        <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.css" />
+        <link rel="stylesheet" href="js/mcustomscrollbar/jquery.mCustomScrollbar.css" />
+
+        <meta name="viewport" content="width=device-width" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <!-- header -->
+            <div class="header">
+                <div class="container">
+                    <div class="header-logo">
+                        <div class="logo"><a href="index.html"></a></div>
+                        <div class="logo-title">АгроСтройТорг</div>
+                    </div>
+
+                    <div class="header-content">
+                        <div class="header-mobile-menu">
+                            <a href="#" class="header-mobile-menu-link">Каталог<svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 11.0526H3.4L10.2 18.2105C10.6 18.6316 10.6 19.2632 10.2 19.6842C10 19.8947 9.7 20 9.5 20C9.3 20 9 19.8947 8.8 19.6842L0.299999 10.7368C-0.1 10.3158 -0.1 9.68421 0.299999 9.26316L8.8 0.315789C9.2 -0.105263 9.8 -0.105263 10.2 0.315789C10.6 0.736842 10.6 1.36842 10.2 1.78947L3.4 8.94737H23C23.6 8.94737 24 9.36842 24 10C24 10.6316 23.6 11.0526 23 11.0526Z" /></svg></a>
+                            <a href="#" class="header-mobile-menu-back"><svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23 11.0526H3.4L10.2 18.2105C10.6 18.6316 10.6 19.2632 10.2 19.6842C10 19.8947 9.7 20 9.5 20C9.3 20 9 19.8947 8.8 19.6842L0.299999 10.7368C-0.1 10.3158 -0.1 9.68421 0.299999 9.26316L8.8 0.315789C9.2 -0.105263 9.8 -0.105263 10.2 0.315789C10.6 0.736842 10.6 1.36842 10.2 1.78947L3.4 8.94737H23C23.6 8.94737 24 9.36842 24 10C24 10.6316 23.6 11.0526 23 11.0526Z" /></svg>Назад</a>
+                            <div class="header-mobile-menu-content">
+                                <ul>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-tanks.html">Емкости</a>
+                                        <ul>
+                                            <li><a href="catalogue-tanks.html">Емкости пластиковые</a></li>
+                                            <li><a href="catalogue-tanks.html">Емкости нержавеющие</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-cassettes.html">Кассеты для перевозки жидкостей</a>
+                                        <ul>
+                                            <li><a href="catalogue-cassettes.html#descr">Описание</a></li>
+                                            <li><a href="catalogue-cassettes.html#popular">Популярные конфигурации</a></li>
+                                            <li><a href="catalogue-cassettes.html#video">Видеообзор</a></li>
+                                            <li><a href="catalogue-cassettes.html#make">Создать свою конфигурацию</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="with-submenu">
+                                        <a href="catalogue-parts.html">Комплектующие к&nbsp;емкостям</a>
+                                        <ul>
+                                            <li><a href="catalogue-parts.html">Фильтры</a></li>
+                                            <li><a href="catalogue-parts.html">Крышки</a></li>
+                                            <li><a href="catalogue-parts.html">Фиттинги</a></li>
+                                            <li><a href="catalogue-parts.html">Шланги и рукава</a></li>
+                                            <li><a href="catalogue-parts.html">Хомуты</a></li>
+                                            <li><a href="catalogue-parts.html">Прочее</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Мотопомпы и насосы</a></li>
+                                    <li class="with-submenu">
+                                        <a href="#">Растворные узлы</a>
+                                        <ul>
+                                            <li><a href="#">Стационарные растворные узлы</a></li>
+                                            <li><a href="#">Мобильные растворные узлы</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Изделия из полимеров на&nbsp;заказ</a></li>
+                                    <li><a href="#">Прочая продукция</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header-menu">
+                            <ul>
+                                <li><a href="services.html">Услуги</a></li>
+                                <li><a href="delivery.html">Доставка</a></li>
+                                <li><a href="about.html">О компании</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-search">
+                            <form action="search.html" method="post">
+                                <div class="header-search-input"><input type="text" name="search" value="" class="required" placeholder="Поиск по товарам, категориям, артикулу" /></div>
+                                <div class="header-search-submit"><button type="submit"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 8.8H9.36L9.12 8.56C9.92 7.68 10.4 6.48 10.4 5.2C10.4 2.32 8.08 0 5.2 0C2.32 0 0 2.32 0 5.2C0 8.08 2.32 10.4 5.2 10.4C6.48 10.4 7.68 9.92 8.56 9.12L8.8 9.36V10L12.8 14L14 12.8L10 8.8V8.8ZM5.2 8.8C3.2 8.8 1.6 7.2 1.6 5.2C1.6 3.2 3.2 1.6 5.2 1.6C7.2 1.6 8.8 3.2 8.8 5.2C8.8 7.2 7.2 8.8 5.2 8.8V8.8Z" /></svg></button></div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="header-location">
+                        <div class="header-city">
+                            <a href="windows/city.html" class="header-city-link window-link">Пенза</a>
+                            <div class="header-city-window">
+                                <div class="header-city-window-text">Ваш город — Пенза?</div>
+                                <div class="header-city-window-ctrl">
+                                    <div class="header-city-window-btn"><a href="#">Да</a></div>
+                                    <div class="header-city-window-link"><a href="windows/city.html" class="window-link">Выбрать другой</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-phone"><a href="tel:+78412980900">+7 (8412) 98-09-00</a></div>
+                        <div class="header-callback"><a href="windows/callback.html" class="window-link">Заказать звонок</a></div>
+                        <div class="header-contacts-mobile">
+                            <div class="header-contacts-mobile-phone"><a href="tel:+78412980900" class="btn-red">+7 (8412) 98-09-00</a></div>
+                            <div class="header-contacts-mobile-callback"><a href="windows/callback.html" class="window-link">Заказать звонок</a></div>
+                            <div class="header-contacts-mobile-email"><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="mobile-menu-link"></a>
+                </div>
+            </div>
+            <!-- header END -->
+
+            <!-- nav -->
+            <div class="nav">
+                <div class="container">
+                    <ul>
+                        <li class="with-submenu">
+                            <a href="#">Весь каталог</a>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-tanks.html">Емкости пластиковые</a></li>
+                                        <li><a href="catalogue-tanks.html">Емкости нержавеющие</a></li>
+                                    </ul>
+                                    <a href="catalogue-tanks.html">Емкости</a>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-cassettes.html#descr">Описание</a></li>
+                                        <li><a href="catalogue-cassettes.html#popular">Популярные конфигурации</a></li>
+                                        <li><a href="catalogue-cassettes.html#video">Видеообзор</a></li>
+                                        <li><a href="catalogue-cassettes.html#make">Создать свою конфигурацию</a></li>
+                                    </ul>
+                                    <a href="catalogue-cassettes.html">Кассеты для перевозки жидкостей</a>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li><a href="catalogue-parts.html">Фильтры</a></li>
+                                        <li><a href="catalogue-parts.html">Крышки</a></li>
+                                        <li><a href="catalogue-parts.html">Фиттинги</a></li>
+                                        <li><a href="catalogue-parts.html">Шланги и рукава</a></li>
+                                        <li><a href="catalogue-parts.html">Хомуты</a></li>
+                                        <li><a href="catalogue-parts.html">Прочее</a></li>
+                                    </ul>
+                                    <a href="catalogue-parts.html">Комплектующие к&nbsp;емкостям</a>
+                                </li>
+                                <li><a href="#">Мотопомпы и насосы</a></li>
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Стационарные растворные узлы</a></li>
+                                        <li><a href="#">Мобильные растворные узлы</a></li>
+                                    </ul>
+                                    <a href="#">Растворные узлы</a>
+                                </li>
+                                <li><a href="#">Изделия из полимеров на&nbsp;заказ</a></li>
+                                <li><a href="#">Прочая продукция</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="catalogue-tanks.html">Емкости</a></li>
+                        <li><a href="catalogue-cassettes.html">Кассеты для перевозки</a></li>
+                        <li><a href="catalogue-parts.html">Комплектующие</a></li>
+                        <li><a href="#">Мотопомпы</a></li>
+                        <li><a href="#">Растворные узлы</a></li>
+                        <li><a href="#">Изделия из полимеров на заказ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- nav END -->
+
+            <div class="content-header">
+                <div class="container">
+                    <h1>Емкости</h1>
+                </div>
+            </div>
+
+            <!-- content menu -->
+            <div class="content-menu">
+                <div class="container">
+                    <div class="content-menu-inner">
+                        <div class="content-menu-list">
+                            <div class="content-menu-list-inner">
+                                <div class="content-menu-list-ul">
+                                    <div class="content-menu-list-li active"><a href="catalogue-tanks.html">Емкости пластиковые</a></div>
+                                    <div class="content-menu-list-li"><a href="catalogue-tanks.html">Емкости нержавеющие</a></div>
+                                </div>
+                            </div>
+                            <div class="content-menu-list-active"></div>
+                            <div class="content-menu-list-next"><svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.703068" d="M1 6.02632H10.8L7.4 9.60526C7.2 9.81579 7.2 10.1316 7.4 10.3421C7.5 10.4474 7.65 10.5 7.75 10.5C7.85 10.5 8 10.4474 8.1 10.3421L12.35 5.86842C12.55 5.65789 12.55 5.34211 12.35 5.13158L8.1 0.657895C7.9 0.447368 7.6 0.447368 7.4 0.657895C7.2 0.868421 7.2 1.18421 7.4 1.39474L10.8 4.97368H1C0.7 4.97368 0.5 5.18421 0.5 5.5C0.5 5.81579 0.7 6.02632 1 6.02632Z" /></svg></div>
+                        </div>
+
+                        <div class="content-menu-filter">
+                            <a href="#" class="content-menu-filter-link"><img src="images/content-menu-filter.svg" alt="" />Фильтры</a>
+                            <div class="content-menu-filter-content"></div>
+                        </div>
+
+                        <div class="content-menu-params">
+                            <div class="content-menu-params-count">145 товаров</div>
+                            <div class="content-menu-sort">
+                                <div class="content-menu-sort-current"><span>По популярности</span></div>
+                                <ul>
+                                    <li class="active"><a href="ajax/catalogue.html">По популярности</a></li>
+                                    <li><a href="ajax/catalogue.html">Сначала дешевле</a></li>
+                                    <li><a href="ajax/catalogue.html">Сначала дороже</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content menu END -->
+
+            <!-- catalogue -->
+            <div class="catalogue">
+                <div class="container">
+
+                    <!-- catalogue filter -->
+                    <div class="catalogue-filter">
+                        <form action="ajax/catalogue.html" method="post">
+
+                            <!-- catalogue filter block -->
+                            <div class="catalogue-filter-block">
+                                <div class="catalogue-filter-block-title">Назначение</div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="function1" /><span>Вода</span></label></div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="function2" /><span>КАС</span></label></div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="function3" /><span>ГСМ</span></label></div>
+                            </div>
+                            <!-- catalogue filter block END -->
+
+                            <!-- catalogue filter block -->
+                            <div class="catalogue-filter-block">
+                                <div class="catalogue-filter-block-title">Обьем</div>
+                                <div class="catalogue-filter-slider" data-min="0" data-max="15000" data-step="500" data-decimals="0">
+                                    <div class="catalogue-filter-slider-text"><span class="catalogue-filter-slider-text-from">500</span> — <span class="catalogue-filter-slider-text-to">15000</span> л</div>
+                                    <input type="hidden" name="volumeFrom" value="500" class="catalogue-filter-slider-from" />
+                                    <input type="hidden" name="volumeTo" value="12000" class="catalogue-filter-slider-to" />
+                                    <div class="catalogue-filter-slider-range"></div>
+                                </div>
+
+                                <div class="catalogue-filter-block-sep"></div>
+
+                                <div class="catalogue-filter-block-title">Высота</div>
+                                <div class="catalogue-filter-slider" data-min="0" data-max="2000" data-step="100" data-decimals="0">
+                                    <div class="catalogue-filter-slider-text"><span class="catalogue-filter-slider-text-from">0</span> — <span class="catalogue-filter-slider-text-to">2000</span> мм и более</div>
+                                    <input type="hidden" name="heightFrom" value="0" class="catalogue-filter-slider-from" />
+                                    <input type="hidden" name="heightTo" value="2000" class="catalogue-filter-slider-to" />
+                                    <div class="catalogue-filter-slider-range"></div>
+                                </div>
+
+                                <div class="catalogue-filter-block-sep"></div>
+
+                                <div class="catalogue-filter-block-title">Высота</div>
+                                <div class="catalogue-filter-slider" data-min="0" data-max="1500" data-step="100" data-decimals="0">
+                                    <div class="catalogue-filter-slider-text"><span class="catalogue-filter-slider-text-from">0</span> — <span class="catalogue-filter-slider-text-to">1500</span> мм и более</div>
+                                    <input type="hidden" name="diameterFrom" value="0" class="catalogue-filter-slider-from" />
+                                    <input type="hidden" name="diameterTo" value="1500" class="catalogue-filter-slider-to" />
+                                    <div class="catalogue-filter-slider-range"></div>
+                                </div>
+                            </div>
+                            <!-- catalogue filter block END -->
+
+                            <!-- catalogue filter block -->
+                            <div class="catalogue-filter-block">
+                                <div class="catalogue-filter-block-title">Тип эксплуатации</div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="type1" /><span>Наземная</span></label></div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="type2" /><span>Подземная</span></label></div>
+
+                                <div class="catalogue-filter-block-sep"></div>
+
+                                <div class="catalogue-filter-block-title">Положение</div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="position1" /><span>Горизонтальная</span></label></div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="position2" /><span>Вертикальная</span></label></div>
+
+                                <div class="catalogue-filter-block-sep"></div>
+
+                                <div class="catalogue-filter-block-title">Форма</div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="form1" /><span>Цилиндрическая</span></label></div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="form2" /><span>Прямоугольная</span></label></div>
+
+                                <div class="catalogue-filter-block-sep"></div>
+
+                                <div class="catalogue-filter-block-title">Тип емкости</div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="type1" /><span>Бассейн (купель)</span></label></div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="type2" /><span>Облегченная</span></label></div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="type3" /><span>Стандарт</span></label></div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="type4" /><span>Усиленная</span></label></div>
+
+                                <div class="catalogue-filter-block-sep"></div>
+
+                                <div class="catalogue-filter-block-title">Спец. предложения</div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="special1" /><span>Акция</span></label></div>
+                                <div class="catalogue-filter-checkbox"><label><input type="checkbox" name="special2" /><span>Производство АСТ</span></label></div>
+                            </div>
+                            <!-- catalogue filter block END -->
+
+                            <a href="#" class="catalogue-filter-reset"><svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><rect x="0.222656" y="14.3633" width="20" height="2" rx="1" transform="rotate(-45 0.222656 14.3633)" /><rect x="1.63672" y="0.222656" width="20" height="2" rx="1" transform="rotate(45 1.63672 0.222656)" /></svg>Сбросить все фильтры</a>
+
+                        </form>
+                        <div class="catalogue-filter-results"></div>
+                    </div>
+                    <!-- catalogue filter END -->
+
+                    <!-- catalogue container -->
+                    <div class="catalogue-container">
+                        <div class="catalogue-container-inner">
+
+                            <!-- catalogue list -->
+                            <div class="catalogue-list">
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-01.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 935 л цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">9 200 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-1">Акция</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-02.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 1400 л цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">12 500 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-03.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 1850 л для жидкостей <1гр/cм3 цилиндрическая...</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">18 500 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-04.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 1000 л цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">9 700 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-05.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 1500 л цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">13 000 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-06.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 2000 л цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">На заказ</div>
+                                        <div class="catalogue-item-price">19 000 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-07.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 4500 л  цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">34 000 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-07.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 4500 л под КАС</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">37 000 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-07.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 5000 л цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">37 000 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-1">Акция</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-08.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 5000 л под КАС цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">40 000 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-08.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 5500 л цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">40 000 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-08.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 5500 л под КАС цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">43 000 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-08.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 1000 л цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">9 700 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-08.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 1500 л цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">13 000 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-08.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 2000 л цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">На заказ</div>
+                                        <div class="catalogue-item-price">19 000 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-08.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 4500 л  цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">34 000 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-08.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 4500 л под КАС</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">37 000 р.</div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                                <!-- catalogue item -->
+                                <div class="catalogue-item">
+                                    <a href="catalogue-detail.html" class="catalogue-item-inner">
+                                        <div class="catalogue-item-photo"><img src="files/catalogue-08.jpg" alt="" /></div>
+                                        <div class="catalogue-item-title">Емкость 5000 л цилиндрическая вертикальная</div>
+                                        <div class="catalogue-item-status">В наличии</div>
+                                        <div class="catalogue-item-price">37 000 р.</div>
+                                        <div class="catalogue-item-events">
+                                            <div class="catalogue-item-event catalogue-item-event-1">Акция</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!-- catalogue item END -->
+
+                            </div>
+                            <!-- catalogue list END -->
+
+                            <!-- pager -->
+                            <div class="pager">
+                                <div class="container">
+                                    <div class="pager-list">
+                                        <a href="#" class="active">1</a>
+                                        <a href="#">2</a>
+                                        <a href="#">3</a>
+                                        <a href="#">4</a>
+                                        <a href="#">5</a>
+                                        <a href="#" class="pager-next">Следующая страница<svg width="24" height="20" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg"><path d="M1 11.0526H20.6L13.8 18.2105C13.4 18.6316 13.4 19.2632 13.8 19.6842C14 19.8947 14.3 20 14.5 20C14.7 20 15 19.8947 15.2 19.6842L23.7 10.7368C24.1 10.3158 24.1 9.68421 23.7 9.26316L15.2 0.315789C14.8 -0.105263 14.2 -0.105263 13.8 0.315789C13.4 0.736842 13.4 1.36842 13.8 1.78947L20.6 8.94737H1C0.4 8.94737 0 9.36842 0 10C0 10.6316 0.4 11.0526 1 11.0526Z" /></svg></a>
+                                    </div>
+                                    <div class="pager-size">
+                                        <span>Показывать по:</span>
+                                        <a href="#" class="active">18</a>
+                                        <a href="#">36</a>
+                                        <a href="#">72</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- pager END -->
+
+                        </div>
+                    </div>
+                    <!-- catalogue container END -->
+
+                </div>
+            </div>
+            <!-- catalogue END -->
+
+            <!-- container -->
+            <div class="container">
+                <div class="catalogue-prefs-title">Наши емкости сделаны по европейским стандартам</div>
+                <div class="catalogue-prefs">
+                    <div class="catalogue-prefs-item">
+                        <div class="catalogue-prefs-item-icon"><img src="images/catalogue-icon-01.svg" alt="" /></div>
+                        <div class="catalogue-prefs-item-title">Долговечность</div>
+                        <div class="catalogue-prefs-item-text">Средний срок службы производимых и&nbsp;поставляемых нами изделий — 100 лет</div>
+                    </div>
+                    <div class="catalogue-prefs-item">
+                        <div class="catalogue-prefs-item-icon"><img src="images/catalogue-icon-02.svg" alt="" /></div>
+                        <div class="catalogue-prefs-item-title">Малый вес</div>
+                        <div class="catalogue-prefs-item-text">Проще проводить строительно-монтажные и&nbsp;погрузочные работы</div>
+                    </div>
+                    <div class="catalogue-prefs-item">
+                        <div class="catalogue-prefs-item-icon"><img src="images/catalogue-icon-03.svg" alt="" /></div>
+                        <div class="catalogue-prefs-item-title">Температура эксплуатации<br /> от -40°С до +50°С</div>
+                        <div class="catalogue-prefs-item-text">Не трескается на морозе и&nbsp;не&nbsp;теряет формы под воздействием солнца</div>
+                    </div>
+                    <div class="catalogue-prefs-item">
+                        <div class="catalogue-prefs-item-icon"><img src="images/catalogue-icon-04.svg" alt="" /></div>
+                        <div class="catalogue-prefs-item-title">Гигиеничность</div>
+                        <div class="catalogue-prefs-item-text">Высокие гигиенические свойства, позволяющие хранить пищевые продукты</div>
+                    </div>
+                </div>
+            </div>
+            <!-- container END -->
+
+            <div class="footer-callback">
+                <div class="footer-callback-title">Узнайте больше по&nbsp;телефону</div>
+                <a href="tel:+78412980900" class="footer-callback-phone">+7 (8412) 98-09-00</a>
+                <div class="footer-callback-link"><a href="windows/callback.html" class="window-link"><span>Заказать обратный звонок</span></a></div>
+                <div class="footer-contacts-link"><a href="contacts.html#feedback-form">Форма обратной связи</a></div>
+            </div>
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-logo">
+                        <div class="footer-logo-icon"></div>
+                        <div class="footer-logo-title">АгроСтройТорг</div>
+                    </div>
+
+                    <div class="footer-contacts footer-contacts-mobile">
+                        <div class="footer-contacts-address">440061, г. Пенза, ул. Насосная 3к2, оф.21</div>
+                        <div class="footer-contacts-links">
+                            <p><a href="tel:+78412980900">+7 (8412) 98-09-00</a></p>
+                            <p><a href="tel:+78412980500">+7 (8412) 98-05-00</a></p>
+                            <p><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></p>
+                        </div>
+                        <div class="footer-contacts-schedule">Режим работы: пн-пт 9:00-18:00</div>
+                        <div class="footer-contacts-delivery">Доставка из г. Пензы: от 1 дня</div>
+                    </div>
+
+                    <div class="footer-nav">
+                        <ul>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="services.html">Услуги</a></li>
+                            <li><a href="delivery.html">Доставка</a></li>
+                            <li><a href="about.html">О компании</a></li>
+                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-contacts">
+                        <div class="footer-contacts-address">440061, г. Пенза, ул. Насосная 3к2, оф.21</div>
+                        <div class="footer-contacts-links">
+                            <p><a href="tel:+78412980900">+7 (8412) 98-09-00</a></p>
+                            <p><a href="tel:+78412980500">+7 (8412) 98-05-00</a></p>
+                            <p><a href="mailto:welcome@ast.ru">welcome@ast.ru</a></p>
+                        </div>
+                        <div class="footer-contacts-schedule">Режим работы: пн-пт 9:00-18:00</div>
+                        <div class="footer-contacts-delivery">Доставка из г. Пензы: от 1 дня</div>
+                    </div>
+
+                    <div class="footer-copyrights">© ООО «АСТ», 2018</div>
+                    <div class="footer-policy"><a href="policy.html">Пользовательское соглашение</a></div>
+                    <div class="footer-developer"><a href="http://7pap.ru" target="_blank">Дизайн и разработка: <img src="images/7pap.svg" alt="" /></a></div>
+                </div>
+            </div>
+            <!-- footer END -->
+
+            <div class="cookie-window">
+                <div class="cookie-window-text">Чтобы вам было удобнее пользоваться сайтом, мы используем cookies для сбора технической информации, такой как IP-адрес вашего местоположения.<br /> Продолжая использовать наш сайт, вы соглашаетесь с использованием файлов cookies.</div>
+                <div class="cookie-window-btn"><a href="#">Согласен</a></div>
+                <div class="cookie-window-link"><a href="policy.html">Подробнее</a></div>
+            </div>
+
+        </div>
+        <!-- wrapper END -->
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/slick/slick.min.js"></script>
+        <script src="js/nouislider/nouislider.min.js"></script>
+        <script src="js/nouislider/wNumb.js"></script>
+        <script src="js/cookie/jquery.cookie.js"></script>
+        <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+        <script src="js/mcustomscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/tools.js"></script>
+
+    </body>
+</html>

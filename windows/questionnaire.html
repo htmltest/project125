@@ -1,0 +1,21 @@
+<div class="window-inner">
+    <div class="window-title">Скачать опросный лист</div>
+    <div class="window-city-text">Выберите категорию</div>
+    <form action="#" method="post" class="window-city-form" autocomplete="off">
+        <script>
+            var questionnaireList = [
+                {"value" : "Все (одним архивом)", "desc" : "files/catalogue-01.jpg"},
+                {"value" : "Кассеты", "desc" : "files/catalogue-02.jpg"},
+                {"value" : "Растворные узлы", "desc" : "files/catalogue-03.jpg"},
+                {"value" : "Изделия из полимеров на заказ", "desc" : "files/catalogue-04.jpg"}
+            ];
+        </script>
+        <div class="form-input form-input-select"><input type="text" name="questionnaire" value="Все (одним архивом)" id="window-questionnaire-input" readonly="readonly" /></div>
+        <div class="window-city-tags">
+            <div class="window-city-tag">Кассеты</div>
+            <div class="window-city-tag">Растворные узлы</div>
+            <div class="window-city-tag">Изделия из полимеров на заказ</div>
+        </div>
+        <div class="window-questionnaire-btn"><a href="#" download>Скачать</a></div>
+    </form>
+</div>
