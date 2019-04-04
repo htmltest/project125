@@ -790,7 +790,14 @@ function initForm(curForm) {
         ignore: '',
         submitHandler: function(form) {
             if ($(form).hasClass('ajax-form')) {
-                windowOpen($(form).attr('action'), new FormData(form));
+                var formData = new FormData(form);
+                
+                if($(form).find('[type=file]').length != 0) {
+                    var file = $(form).find('[type=file]')[0].files[0];
+                    formData.append('file', file);
+                }
+                
+                windowOpen($(form).attr('action'), formData);
             } else {
                 form.submit();
             }
