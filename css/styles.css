@@ -10,7 +10,7 @@
 
 html {min-width:360px}
 
-body {min-width:360px; margin:0; padding:0; font:16px/28px Roboto, sans-serif; color:#151515; background:#fff; -webkit-text-size-adjust:100%}
+body {min-width:360px; margin:0; padding:0; font:16px/28px Roboto, sans-serif; color:#151515; background:#fff; -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
 
 @media screen and (max-width:1119px) {
     body {line-height:24px}
@@ -37,7 +37,8 @@ ul li:before {content:""; display:block; width:8px; height:8px; background:#208b
 
 @media screen and (max-width:1119px) {
     h1 {font-size:20px; line-height:22px; font-weight:500}
-    h2 {font-size:26px; line-height:32px}
+    h2 {font-size:26px; line-height:32px; margin:34px 0 22px 0}
+    h2+p {margin-top:22px}
     p {margin:24px 0}
 }
 
@@ -1136,8 +1137,14 @@ p.contacts-form-text {font-size:18px; line-height:30px; margin:-12px 0 30px 0}
     .services-top-img img {width:100%; margin-right:0; margin-left:0}
 }
 
-.services-inner {max-width:929px; margin:64px 0 80px 0}
-.services-inner h2 {margin-top:48px}
+.services-inner {max-width:929px; margin:58px 0 80px 0}
+.services-inner h2 {margin-top:43px; margin-bottom:24px}
+.services-inner h2+p {margin-top:24px}
+
+@media screen and (max-width:1119px) {
+    .services-inner h2 {margin-top:34px; margin-bottom:22px}
+    .services-inner h2+p {margin-top:22px}
+}
 
 .services-prices {text-align:center; padding:72px 0 80px 0; font:500 20px/28px GothamPro, sans-serif; background:#f2f4f6}
 .services-prices-text {max-width:677px; margin:0 auto}
