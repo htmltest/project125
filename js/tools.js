@@ -797,6 +797,10 @@ function initForm(curForm) {
                     formData.append('file', file);
                 }
                 
+                else if($(form).find('.order-form-final-info table').length != 0) {
+                    var table = $(form).find('.order-form-final-info').html();
+                    formData.append('settigns', table);
+                }
                 windowOpen($(form).attr('action'), formData);
             } else {
                 form.submit();
