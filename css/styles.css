@@ -595,6 +595,7 @@ form {margin:40px 0; padding:0}
 .catalogue-item-inner:hover {color:#208bd6; box-shadow:0px 4px 6px rgba(0, 0, 0, 0.04)}
 .catalogue-item-photo {margin:0 -24px; height:184px; line-height:184px; background:url(../images/catalogue-img.svg) no-repeat center; text-align:center}
 .catalogue-item-photo img {vertical-align:bottom}
+.slick-slide .catalogue-item-photo img {display:inline-block}
 .catalogue-item-title {font-size:16px; line-height:20px; letter-spacing:0; margin:17px 0 0 0; height:60px; position:relative; overflow:hidden}
 .catalogue-item-status {font-size:14px; line-height:18px; letter-spacing:0.2px; color:#8f8f8f; margin:13px 0 0 0}
 .catalogue-item-price {font:500 20px/30px GothamPro, sans-serif; letter-spacing:0; color:#dc493a}
