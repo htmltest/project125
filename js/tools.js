@@ -819,7 +819,6 @@ function windowOpen(linkWindow, dataWindow) {
     curPadding = $('.wrapper').width() - curPadding;
     $('body').css({'margin-right': curPadding + 'px'});
     $('.cookie-window').css({'margin-right': curPadding + 'px'});
-
     $('body').append('<div class="window"><div class="window-loading"></div></div>')
 
     $.ajax({
@@ -838,6 +837,7 @@ function windowOpen(linkWindow, dataWindow) {
 
         $('.window form').each(function() {
             initForm($(this));
+            if(!!$('.catalogue-detail').length) $('[name=pr_id]').val($('.catalogue-detail-order a').data('id'));
         });
     });
 }
