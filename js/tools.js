@@ -59,7 +59,7 @@ $(document).ready(function() {
         }
     });
 
-    $('body').on('click', '.content-menu-sort ul li a', function(e) {
+    /*$('body').on('click', '.content-menu-sort ul li a', function(e) {
         var curLink = $(this);
         var curLi = curLink.parent();
         if (!curLi.hasClass('active')) {
@@ -70,9 +70,9 @@ $(document).ready(function() {
         $('.content-menu-sort.open').removeClass('open');
         reloadCatalogue(curLink.attr('href'));
         e.preventDefault();
-    });
+    });*/
 
-    $('.catalogue-filter-slider').each(function() {
+    /*$('.catalogue-filter-slider').each(function() {
         var curSlider = $(this);
         var curRange = curSlider.find('.catalogue-filter-slider-range')[0];
         noUiSlider.create(curRange, {
@@ -102,7 +102,7 @@ $(document).ready(function() {
             $('.catalogue-filter-results').addClass('visible');
             reloadCatalogue($('.catalogue-filter form').attr('action'), new FormData($('.catalogue-filter form')[0]));
         });
-    });
+    });*/
 
     $('.header-city-window').each(function() {
         if (typeof $.cookie('cityconfirm') == 'undefined') {
@@ -192,13 +192,13 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
-    $('body').on('change', '.catalogue-filter-checkbox input', function() {
+    /*$('body').on('change', '.catalogue-filter-checkbox input', function() {
         var curCheckbox = $(this).parents().filter('.catalogue-filter-checkbox');
         $('.catalogue-filter-results').html('<div class="catalogue-filter-results-loading"><div class="catalogue-filter-results-loading-center"></div></div>');
         $('.catalogue-filter-results').css({'top': curCheckbox.offset().top - $('.catalogue-filter').offset().top + 11});
         $('.catalogue-filter-results').addClass('visible');
         reloadCatalogue($('.catalogue-filter form').attr('action'), new FormData($('.catalogue-filter form')[0]));
-    });
+    });*/
 
     $('body').on('click', '.content-menu-page-li a', function(e) {
         var curBlock = $($(this).attr('href'));
@@ -862,7 +862,7 @@ function windowClose() {
     }
 }
 
-function reloadCatalogue(linkLoad, dataLoad) {
+/*function reloadCatalogue(linkLoad, dataLoad) {
     $.ajax({
         type: 'POST',
         url: linkLoad,
@@ -885,7 +885,7 @@ function reloadCatalogue(linkLoad, dataLoad) {
         resizeCatalogue();
         resizeContentMenu();
     });
-}
+}*/
 
 function positionContentMenu() {
     $('.content-menu-list-active').each(function() {
