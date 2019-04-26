@@ -314,6 +314,17 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    $('.config-step').click(function(e) {
+        var curActiveIndex = $('.config-step').index($('.config-step.active'));
+        var curIndex = $('.config-step').index($(this));
+        if (curIndex < curActiveIndex) {
+            $('.config-form-step').removeClass('active');
+            $('.config-form-step').eq(curIndex).addClass('active');
+            $('.config-step').removeClass('active');
+            $('.config-step').eq(curIndex).addClass('active');
+        }
+    });
+
     $('.config-form-order-btn a').click(function(e) {
         var newHTML = '<table><tbody>';
         $('.config-form-block').each(function() {
@@ -791,12 +802,12 @@ function initForm(curForm) {
         submitHandler: function(form) {
             if ($(form).hasClass('ajax-form')) {
                 var formData = new FormData(form);
-                
+
                 if($(form).find('[type=file]').length != 0) {
                     var file = $(form).find('[type=file]')[0].files[0];
                     formData.append('file', file);
                 }
-                
+
                 else if($(form).find('.order-form-final-info table').length != 0) {
                     var table = $(form).find('.order-form-final-info').html();
                     formData.append('settigns', table);

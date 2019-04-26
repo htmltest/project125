@@ -1347,8 +1347,11 @@ p.contacts-form-text {font-size:18px; line-height:30px; margin:-12px 0 30px 0}
 }
 
 .config-steps {margin:32px 0 0 0; height:88px; font-size:14px; line-height:88px; letter-spacing:0.4px; font-weight:500; text-transform:uppercase; background:#0353a4; background:linear-gradient(73deg, #0353a4, #208bd6)}
-.config-step {float:left; position:relative; padding:0 10px 0 65px; color:#fff; opacity:0.5}
-.config-step.active {opacity:1}
+.config-step {float:left; position:relative; padding:0 10px 0 65px; color:#fff; opacity:0.5; cursor:pointer}
+.config-step.active {opacity:1; cursor:default}
+.config-step.active+.config-step {cursor:default}
+.config-step.active+.config-step+.config-step {cursor:default}
+.config-step.active+.config-step+.config-step+.config-step {cursor:default}
 .config-step:before {content:""; display:block; width:41px; height:88px; position:absolute; left:0; top:0; background:url(../images/config-steps.svg) no-repeat; background-size:100%}
 .config-step:first-child {padding-left:50px}
 .config-step:first-child:before {width:17px; background:#fff}
